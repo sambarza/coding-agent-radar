@@ -23,7 +23,7 @@ jobs:
 
       - name: Run scanner
         env:
-          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+          GITHUB_PAT: ${{ secrets.GH_PAT }}
         run: uv run scan
 
       - name: Commit results
