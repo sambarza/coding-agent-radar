@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding Agent Stats</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #080c14;
+      --surface:   #0f1724;
+      --surface2:  #162032;
+      --border:    #1e2d42;
+      --text:      #e2e8f0;
+      --muted:     #4d6585;
+      --subtle:    #2a3f58;
+      --accent:    #4f8ef7;
+      --radius:    10px;
+      --max-width: 1200px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Layout ──────────────────────────────────────────────── */
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    /* ── Header ──────────────────────────────────────────────── */
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-left h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: var(--text);
+    }
+
+    .header-left p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #22c55e;
+    }
+
+    /* ── Stat cards ──────────────────────────────────────────── */
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+    }
+
+    .card .value {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .card .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-top: 8px;
+    }
+
+    /* ── Chart grid ──────────────────────────────────────────── */
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 20px;
+    }
+
+    .panel h2 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+    }
+
+    canvas { width: 100% !important; }
+
+    /* ── Error ───────────────────────────────────────────────── */
+
+    #error {
+      display: none;
+      background: #160a0a;
+      border: 1px solid #3d1515;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      color: #f87171;
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+
+    /* ── Methodology (collapsed) ─────────────────────────────── */
+
+    .methodology {
+      margin-bottom: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 24px;
+    }
+
+    .methodology[open] {
+      padding-bottom: 24px;
+    }
+
+    .methodology summary {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      list-style: none;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      user-select: none;
+      width: fit-content;
+    }
+
+    .methodology summary::-webkit-details-marker { display: none; }
+
+    .methodology summary .chevron {
+      font-size: 10px;
+      transition: transform 0.2s;
+    }
+
+    .methodology[open] summary .chevron {
+      transform: rotate(90deg);
+    }
+
+    .methodology-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .methodology-section h3 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .methodology-section p {
+      color: var(--subtle);
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .signal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    .signal-table tr {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .signal-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .signal-table td {
+      padding: 6px 0;
+      vertical-align: middle;
+    }
+
+    .signal-table .agent-name {
+      color: var(--muted);
+      width: 140px;
+      padding-right: 12px;
+      white-space: nowrap;
+    }
+
+    .signal-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .signal {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-family: ui-monospace, "Cascadia Code", monospace;
+      font-size: 11px;
+      color: var(--accent);
+    }
+
+    .limitations {
+      list-style: none;
+      padding: 0;
+    }
+
+    .limitations li {
+      color: var(--subtle);
+      font-size: 13px;
+      padding: 3px 0 3px 14px;
+      position: relative;
+    }
+
+    .limitations li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    /* ── Footer ──────────────────────────────────────────────── */
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* ── Responsive ──────────────────────────────────────────── */
+
+    @media (max-width: 900px) {
+      .cards       { grid-template-columns: repeat(2, 1fr); }
+      .grid-2      { grid-template-columns: 1fr; }
+      .methodology-body { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .cards       { grid-template-columns: 1fr 1fr; }
+      .header      { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .header-right { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <h1>Coding Agent Stats</h1>
+      <p>Adoption of AI coding agents across public GitHub repositories</p>
+    </div>
+    <div class="header-right">
+      <div class="badge">
+        <span class="dot"></span>
+        <span id="meta-date">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="error"></div>
+
+  <details class="methodology">
+    <summary>
+      <span class="chevron">▶</span>
+      Methodology
+    </summary>
+    <div class="methodology-body">
+      <div class="methodology-section">
+        <h3>Detection strategy</h3>
+        <p>
+          A repository is counted as using a coding agent when it contains one or more
+          agent-specific config files. No file contents are read and no LLM is involved.
+        </p>
+        <table class="signal-table" id="signal-list"></table>
+      </div>
+      <div class="methodology-section">
+        <h3>Data collection</h3>
+        <p>
+          For each signal file the GitHub Code Search API is queried (up to 1000 results
+          per signal). Results are returned in best-match order. Each matched repository
+          is enriched with full metadata via a separate API call, cached to avoid
+          redundant fetches across signals.
+        </p>
+        <p>
+          A repository is counted once per agent regardless of how many of its signal
+          files match. The scanner runs weekly and preserves original
+          discovery dates across re-runs.
+        </p>
+        <h3 style="margin-top:16px">Limitations</h3>
+        <ul class="limitations">
+          <li>Repos using an agent without committing a config file are not counted.</li>
+          <li>Only public GitHub repositories are covered.</li>
+          <li>The timeline reflects scan date, not the original commit date.</li>
+          <li>All <a href="https://docs.github.com/en/rest/search/search?apiVersion=2026-03-10#about-search" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">GitHub Code Search API</a> limitations apply — including the 1000 result cap per query, index delays, and potential gaps in coverage for recently pushed or low-activity repositories.</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <div class="cards">
+    <div class="card">
+      <div class="value" id="stat-total">—</div>
+      <div class="label">Total detections</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-agents">—</div>
+      <div class="label">Agents tracked</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-last-repos">—</div>
+      <div class="label">Repos last scan</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-new">—</div>
+      <div class="label">New last scan</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Agent Distribution</h2>
+      </div>
+      <canvas id="chart-agents" height="280"></canvas>
+    </div>
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Adoption Over Time</h2>
+      </div>
+      <canvas id="chart-timeline" height="280"></canvas>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <h2>Repository Popularity by Agent</h2>
+    </div>
+    <canvas id="chart-stars" height="180"></canvas>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
+    <div class="panel-header">
+      <h2>Agent Share by Language (%)</h2>
+    </div>
+    <canvas id="chart-languages" height="180"></canvas>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
+    <div class="panel-header">
+      <h2>Language Share by Agent (%)</h2>
+    </div>
+    <canvas id="chart-languages-by-agent" height="180"></canvas>
+  </div>
+
+  <footer>
+    Data collected from public GitHub repositories · Updated weekly
+  </footer>
+
+</div>
+<script src="charts.js"></script>
+</body>
+</html>

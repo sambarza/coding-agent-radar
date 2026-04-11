@@ -1,0 +1,42 @@
+[
+  {
+    "month": "2026-04",
+    "agent": "aider",
+    "count": 625
+  },
+  {
+    "month": "2026-04",
+    "agent": "claude_code",
+    "count": 964
+  },
+  {
+    "month": "2026-04",
+    "agent": "codex",
+    "count": 958
+  },
+  {
+    "month": "2026-04",
+    "agent": "continue",
+    "count": 59
+  },
+  {
+    "month": "2026-04",
+    "agent": "copilot",
+    "count": 958
+  },
+  {
+    "month": "2026-04",
+    "agent": "cursor",
+    "count": 689
+  },
+  {
+    "month": "2026-04",
+    "agent": "devin",
+    "count": 254
+  },
+  {
+    "month": "2026-04",
+    "agent": "windsurf",
+    "count": 935
+  }
+]

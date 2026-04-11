@@ -1,0 +1,82 @@
+[
+  {
+    "agent": "claude_code",
+    "label": "Claude Code",
+    "color": "#4ECDC4",
+    "signals": [
+      "CLAUDE.md"
+    ],
+    "count": 964,
+    "pct": 17.7
+  },
+  {
+    "agent": "copilot",
+    "label": "GitHub Copilot",
+    "color": "#58a6ff",
+    "signals": [
+      "copilot-instructions.md"
+    ],
+    "count": 958,
+    "pct": 17.6
+  },
+  {
+    "agent": "codex",
+    "label": "OpenAI Codex",
+    "color": "#74AA9C",
+    "signals": [
+      "AGENTS.md"
+    ],
+    "count": 958,
+    "pct": 17.6
+  },
+  {
+    "agent": "windsurf",
+    "label": "Windsurf",
+    "color": "#96CEB4",
+    "signals": [
+      ".windsurfrules"
+    ],
+    "count": 935,
+    "pct": 17.2
+  },
+  {
+    "agent": "cursor",
+    "label": "Cursor",
+    "color": "#FF6B6B",
+    "signals": [
+      ".cursorrules"
+    ],
+    "count": 689,
+    "pct": 12.7
+  },
+  {
+    "agent": "aider",
+    "label": "Aider",
+    "color": "#FFEAA7",
+    "signals": [
+      ".aider.conf.yml"
+    ],
+    "count": 625,
+    "pct": 11.5
+  },
+  {
+    "agent": "devin",
+    "label": "Devin",
+    "color": "#F7DC6F",
+    "signals": [
+      "devin.md"
+    ],
+    "count": 254,
+    "pct": 4.7
+  },
+  {
+    "agent": "continue",
+    "label": "Continue",
+    "color": "#DDA0DD",
+    "signals": [
+      ".continuerc.json"
+    ],
+    "count": 59,
+    "pct": 1.1
+  }
+]
