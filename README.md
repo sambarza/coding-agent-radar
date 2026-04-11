@@ -1,8 +1,8 @@
-# Coding Agent Stats
+# Coding Agent Radar
 
 A dashboard tracking the adoption of AI coding agents across public GitHub repositories.
 
-Live at: **[your-username.github.io/coding-agent-stats](https://your-username.github.io/coding-agent-stats)**
+Live at: **[sambarza.github.io/coding-agent-radar](https://sambarza.github.io/coding-agent-radar)**
 
 ---
 
