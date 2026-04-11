@@ -17,27 +17,27 @@
   {
     "agent": "aider",
     "bucket": "< 100",
-    "count": 604
+    "count": 606
   },
   {
     "agent": "claude_code",
     "bucket": "100\u20131k",
-    "count": 24
+    "count": 37
   },
   {
     "agent": "claude_code",
     "bucket": "10k+",
-    "count": 9
+    "count": 11
   },
   {
     "agent": "claude_code",
     "bucket": "1k\u201310k",
-    "count": 15
+    "count": 20
   },
   {
     "agent": "claude_code",
     "bucket": "< 100",
-    "count": 916
+    "count": 1523
   },
   {
     "agent": "codex",
@@ -52,12 +52,12 @@
   {
     "agent": "codex",
     "bucket": "1k\u201310k",
-    "count": 18
+    "count": 19
   },
   {
     "agent": "codex",
     "bucket": "< 100",
-    "count": 879
+    "count": 897
   },
   {
     "agent": "continue",
@@ -77,7 +77,7 @@
   {
     "agent": "copilot",
     "bucket": "< 100",
-    "count": 939
+    "count": 943
   },
   {
     "agent": "cursor",
@@ -92,12 +92,12 @@
   {
     "agent": "cursor",
     "bucket": "1k\u201310k",
-    "count": 6
+    "count": 7
   },
   {
     "agent": "cursor",
     "bucket": "< 100",
-    "count": 665
+    "count": 720
   },
   {
     "agent": "devin",
@@ -117,7 +117,7 @@
   {
     "agent": "devin",
     "bucket": "< 100",
-    "count": 236
+    "count": 237
   },
   {
     "agent": "windsurf",
@@ -137,6 +137,6 @@
   {
     "agent": "windsurf",
     "bucket": "< 100",
-    "count": 912
+    "count": 921
   }
 ]

@@ -2,17 +2,17 @@
   {
     "month": "2026-04",
     "agent": "aider",
-    "count": 625
+    "count": 627
   },
   {
     "month": "2026-04",
     "agent": "claude_code",
-    "count": 964
+    "count": 1591
   },
   {
     "month": "2026-04",
     "agent": "codex",
-    "count": 958
+    "count": 977
   },
   {
     "month": "2026-04",
@@ -22,21 +22,21 @@
   {
     "month": "2026-04",
     "agent": "copilot",
-    "count": 958
+    "count": 962
   },
   {
     "month": "2026-04",
     "agent": "cursor",
-    "count": 689
+    "count": 745
   },
   {
     "month": "2026-04",
     "agent": "devin",
-    "count": 254
+    "count": 255
   },
   {
     "month": "2026-04",
     "agent": "windsurf",
-    "count": 935
+    "count": 944
   }
 ]
