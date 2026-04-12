@@ -71,8 +71,11 @@ def upsert_detection(
 
         if existing:
             conn.execute(
-                "UPDATE detections SET stars = ?, last_seen_at = ? WHERE repo_id = ? AND agent = ?",
-                (stars, now, repo_id, agent),
+                """UPDATE detections
+                   SET stars = ?, last_seen_at = ?,
+                       language = COALESCE(language, ?)
+                   WHERE repo_id = ? AND agent = ?""",
+                (stars, now, language, repo_id, agent),
             )
             return False
 
