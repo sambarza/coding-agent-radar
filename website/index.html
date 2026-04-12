@@ -290,6 +290,32 @@
       color: var(--muted);
     }
 
+    /* ── Agent filter ────────────────────────────────────────── */
+
+    .agent-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .agent-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      cursor: pointer;
+      color: var(--muted);
+      transition: border-color 0.15s, color 0.15s;
+      font-family: inherit;
+    }
+
+    .agent-toggle.active {
+      color: var(--text);
+      border-color: var(--agent-color);
+    }
+
     /* ── Footer ──────────────────────────────────────────────── */
 
     footer {
@@ -333,6 +359,8 @@
   </div>
 
   <div id="error"></div>
+
+  <div class="agent-filter" id="agent-filter"></div>
 
   <details class="methodology">
     <summary>
@@ -413,7 +441,9 @@
     <canvas id="chart-stars" height="180"></canvas>
   </div>
 
-  <div class="panel" style="margin-top:12px">
+  <div class="agent-filter" id="lang-filter" style="margin-top:12px"></div>
+
+  <div class="panel">
     <div class="panel-header">
       <h2>Agent Share by Language (%)</h2>
     </div>

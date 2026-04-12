@@ -22,6 +22,8 @@ uv run test-scan --agent all --pages 1
 
 The scanner updates `data.sqlite` and regenerates all files in `website/public/`. After a run, commit both to deploy.
 
+**Always test website changes locally before committing:** run `uv run serve` and verify in the browser, then commit and push.
+
 ## Architecture
 
 Two independent components share nothing at runtime — they communicate only through files on disk.
