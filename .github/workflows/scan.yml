@@ -1,4 +1,4 @@
-name: Monthly Scan
+name: Weekly Scan
 
 on:
   schedule:
