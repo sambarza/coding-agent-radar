@@ -1,41 +1,41 @@
 [
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "aider",
     "count": 627
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "claude_code",
     "count": 1591
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "codex",
     "count": 977
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "continue",
     "count": 59
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "copilot",
     "count": 962
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "cursor",
     "count": 745
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "devin",
     "count": 255
   },
   {
-    "month": "2026-04",
+    "month": "2026-04-11",
     "agent": "windsurf",
     "count": 944
   }

@@ -47,7 +47,7 @@ def _export_agents() -> None:
 def _export_timeline() -> None:
     with get_conn() as conn:
         rows = conn.execute("""
-            SELECT strftime('%Y-%m', first_detected_at) AS month,
+            SELECT strftime('%Y-%m-%d', first_detected_at) AS month,
                    agent,
                    COUNT(*) AS count
             FROM detections

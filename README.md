@@ -67,13 +67,13 @@ count(repo_id) GROUP BY agent
 
 ### `timeline.json` — adoption over time
 
-Groups detections by the month they were first detected (`first_detected_at`) and by agent. The dashboard renders this as a cumulative line chart so you can see when each tool started gaining traction.
+Groups detections by the week they were first detected (`first_detected_at`) and by agent. The dashboard renders this as a cumulative line chart so you can see when each tool started gaining traction.
 
 ```
-COUNT(*) GROUP BY strftime('%Y-%m', first_detected_at), agent
+COUNT(*) GROUP BY strftime('%Y-%m-%d', first_detected_at), agent
 ```
 
-Note: on the first scan all detections fall in the same month. The timeline becomes meaningful after several weeks of runs.
+Note: on the first scan all detections fall in the same week. The timeline becomes meaningful after several weeks of runs.
 
 ### `languages.json` — breakdown by language
 
