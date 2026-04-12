@@ -395,6 +395,7 @@
           <li>Only public GitHub repositories are covered.</li>
           <li>The timeline reflects scan date, not the original commit date.</li>
           <li>All <a href="https://docs.github.com/en/rest/search/search?apiVersion=2026-03-10#about-search" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">GitHub Code Search API</a> limitations apply — including the 1000 result cap per query, index delays, and potential gaps in coverage for recently pushed or low-activity repositories.</li>
+          <li>GitHub forces results to be sorted by relevance ("best match") — sorting by stars is not supported by the API. High-starred repos are therefore not guaranteed to appear and may be missing from the data.</li>
         </ul>
       </div>
     </div>

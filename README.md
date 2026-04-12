@@ -33,7 +33,7 @@ For each signal file, the scanner queries the **GitHub Code Search API**:
 GET /search/code?q=filename:{signal_file}&per_page=100&page={n}
 ```
 
-Results are returned in best-match order, which correlates with repository popularity, so the first pages naturally surface the most relevant repos.
+Results are returned in best-match order — GitHub's relevance ranking, which cannot be changed. Sorting by stars is not supported by the API, so high-starred repos are not guaranteed to appear and can be absent from results entirely.
 
 Because the Code Search API returns limited repository metadata, each matched repo is then enriched via a separate call:
 
@@ -45,7 +45,7 @@ This provides star count, primary language, and creation date. An in-memory cach
 
 ### Scan depth
 
-Each signal is scanned up to 10 pages (100 results/page), hitting GitHub's hard cap of 1000 results per Code Search query. Results are returned in best-match order, so the first pages naturally surface the most popular repos and the signal quality stays high throughout.
+Each signal is scanned up to 10 pages (100 results/page), hitting GitHub's hard cap of 1000 results per Code Search query. Results are returned in best-match order — not sorted by stars — so popular repos are not guaranteed to be included.
 
 ### Deduplication
 
@@ -93,7 +93,7 @@ Records the date of the last scan, how many repos were processed, and the total 
 
 - **Signal-based detection only** — repos that use an agent without committing a config file are not counted.
 - **GitHub only** — GitLab, Bitbucket, and self-hosted repos are not covered.
-- **1000 result cap** — GitHub Code Search returns at most 1000 results per query. Less popular agents with fewer than 1000 repos are fully counted; popular agents are capped.
+- **1000 result cap with forced best-match ordering** — GitHub Code Search returns at most 1000 results per query. Sorting by stars is not supported by the API — GitHub forces results into relevance ("best match") order. This means high-starred repos are not guaranteed to appear — a repo with 70k stars can be absent while lower-starred repos are included. Less popular agents with fewer than 1000 repos are fully counted; popular agents are capped and may be missing notable repos.
 - **`first_detected_at` is scan date** — we record when our scanner first found a repo, not when the config file was originally committed. This slightly delays the timeline relative to actual adoption.
 
 ---
