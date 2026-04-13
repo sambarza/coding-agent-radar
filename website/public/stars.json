@@ -17,47 +17,47 @@
   {
     "agent": "aider",
     "bucket": "< 100",
-    "count": 606
+    "count": 613
   },
   {
     "agent": "claude_code",
     "bucket": "100\u20131k",
-    "count": 37
+    "count": 43
   },
   {
     "agent": "claude_code",
+    "bucket": "10k+",
+    "count": 12
+  },
+  {
+    "agent": "claude_code",
+    "bucket": "1k\u201310k",
+    "count": 25
+  },
+  {
+    "agent": "claude_code",
+    "bucket": "< 100",
+    "count": 2050
+  },
+  {
+    "agent": "codex",
+    "bucket": "100\u20131k",
+    "count": 56
+  },
+  {
+    "agent": "codex",
     "bucket": "10k+",
     "count": 11
   },
   {
-    "agent": "claude_code",
+    "agent": "codex",
     "bucket": "1k\u201310k",
     "count": 20
   },
   {
-    "agent": "claude_code",
-    "bucket": "< 100",
-    "count": 1523
-  },
-  {
-    "agent": "codex",
-    "bucket": "100\u20131k",
-    "count": 51
-  },
-  {
-    "agent": "codex",
-    "bucket": "10k+",
-    "count": 10
-  },
-  {
-    "agent": "codex",
-    "bucket": "1k\u201310k",
-    "count": 19
-  },
-  {
     "agent": "codex",
     "bucket": "< 100",
-    "count": 897
+    "count": 1060
   },
   {
     "agent": "continue",
@@ -67,7 +67,7 @@
   {
     "agent": "copilot",
     "bucket": "100\u20131k",
-    "count": 14
+    "count": 15
   },
   {
     "agent": "copilot",
@@ -77,17 +77,17 @@
   {
     "agent": "copilot",
     "bucket": "< 100",
-    "count": 943
+    "count": 984
   },
   {
     "agent": "cursor",
     "bucket": "100\u20131k",
-    "count": 15
+    "count": 16
   },
   {
     "agent": "cursor",
     "bucket": "10k+",
-    "count": 3
+    "count": 4
   },
   {
     "agent": "cursor",
@@ -97,7 +97,7 @@
   {
     "agent": "cursor",
     "bucket": "< 100",
-    "count": 720
+    "count": 1023
   },
   {
     "agent": "devin",
@@ -117,7 +117,7 @@
   {
     "agent": "devin",
     "bucket": "< 100",
-    "count": 237
+    "count": 242
   },
   {
     "agent": "windsurf",
@@ -137,6 +137,6 @@
   {
     "agent": "windsurf",
     "bucket": "< 100",
-    "count": 921
+    "count": 953
   }
 ]

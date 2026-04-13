@@ -6,8 +6,8 @@
     "signals": [
       "CLAUDE.md"
     ],
-    "count": 1591,
-    "pct": 25.8
+    "count": 2130,
+    "pct": 29.3
   },
   {
     "agent": "codex",
@@ -16,28 +16,8 @@
     "signals": [
       "AGENTS.md"
     ],
-    "count": 977,
-    "pct": 15.9
-  },
-  {
-    "agent": "copilot",
-    "label": "GitHub Copilot",
-    "color": "#58a6ff",
-    "signals": [
-      "copilot-instructions.md"
-    ],
-    "count": 962,
-    "pct": 15.6
-  },
-  {
-    "agent": "windsurf",
-    "label": "Windsurf",
-    "color": "#96CEB4",
-    "signals": [
-      ".windsurfrules"
-    ],
-    "count": 944,
-    "pct": 15.3
+    "count": 1147,
+    "pct": 15.8
   },
   {
     "agent": "cursor",
@@ -46,8 +26,28 @@
     "signals": [
       ".cursorrules"
     ],
-    "count": 745,
-    "pct": 12.1
+    "count": 1050,
+    "pct": 14.5
+  },
+  {
+    "agent": "copilot",
+    "label": "GitHub Copilot",
+    "color": "#58a6ff",
+    "signals": [
+      "copilot-instructions.md"
+    ],
+    "count": 1004,
+    "pct": 13.8
+  },
+  {
+    "agent": "windsurf",
+    "label": "Windsurf",
+    "color": "#96CEB4",
+    "signals": [
+      ".windsurfrules"
+    ],
+    "count": 976,
+    "pct": 13.4
   },
   {
     "agent": "aider",
@@ -56,8 +56,8 @@
     "signals": [
       ".aider.conf.yml"
     ],
-    "count": 627,
-    "pct": 10.2
+    "count": 634,
+    "pct": 8.7
   },
   {
     "agent": "devin",
@@ -66,8 +66,8 @@
     "signals": [
       "devin.md"
     ],
-    "count": 255,
-    "pct": 4.1
+    "count": 260,
+    "pct": 3.6
   },
   {
     "agent": "continue",
@@ -77,6 +77,6 @@
       ".continuerc.json"
     ],
     "count": 59,
-    "pct": 1.0
+    "pct": 0.8
   }
 ]
