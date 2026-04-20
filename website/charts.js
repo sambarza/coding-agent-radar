@@ -22,6 +22,16 @@ async function load(file) {
   return res.json();
 }
 
+async function loadStarCount() {
+  try {
+    const res = await fetch('https://api.github.com/repos/sambarza/coding-agent-radar');
+    if (!res.ok) return;
+    const { stargazers_count } = await res.json();
+    const el = document.getElementById('star-count');
+    if (el) el.textContent = fmt(stargazers_count);
+  } catch (_) {}
+}
+
 function showError(msg) {
   const el = document.getElementById('error');
   el.style.display = 'block';
@@ -365,3 +375,5 @@ async function init() {
 
 Promise.all([renderMeta(), init()])
   .catch(err => showError(`Could not load data: ${err.message}. Run the scanner first.`));
+
+loadStarCount();
