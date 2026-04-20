@@ -166,6 +166,23 @@
       font-size: 13px;
     }
 
+    /* ── Draft banner ────────────────────────────────────────── */
+
+    .draft-banner {
+      background: #1c1500;
+      border: 1px solid #5a3e00;
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      color: #f59e0b;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .draft-banner strong {
+      font-weight: 700;
+    }
+
     /* ── Methodology (collapsed) ─────────────────────────────── */
 
     .methodology {
@@ -361,6 +378,13 @@
   <div id="error"></div>
 
   <div class="agent-filter" id="agent-filter"></div>
+
+  <div class="draft-banner">
+    <strong>⚠ Draft methodology — work in progress.</strong>
+    The detection rules are a starting point, not a definitive standard.
+    A config file in a repo is a weak signal: it may be a template, a fork, an experiment, or simply outdated.
+    Treat all numbers as rough approximations, not ground truth.
+  </div>
 
   <details class="methodology">
     <summary>
