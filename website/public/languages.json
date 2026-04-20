@@ -2,17 +2,17 @@
   {
     "language": "TypeScript",
     "agent": "claude_code",
-    "count": 632
+    "count": 796
   },
   {
     "language": "Python",
     "agent": "claude_code",
-    "count": 438
+    "count": 558
   },
   {
     "language": "TypeScript",
     "agent": "cursor",
-    "count": 427
+    "count": 435
   },
   {
     "language": "TypeScript",
@@ -27,7 +27,7 @@
   {
     "language": "TypeScript",
     "agent": "copilot",
-    "count": 301
+    "count": 318
   },
   {
     "language": "Python",
@@ -35,74 +35,74 @@
     "count": 257
   },
   {
-    "language": "Python",
-    "agent": "cursor",
-    "count": 191
+    "language": "JavaScript",
+    "agent": "claude_code",
+    "count": 216
   },
   {
     "language": "Python",
     "agent": "copilot",
-    "count": 185
+    "count": 201
+  },
+  {
+    "language": "Python",
+    "agent": "cursor",
+    "count": 196
   },
   {
     "language": "Python",
     "agent": "windsurf",
-    "count": 175
-  },
-  {
-    "language": "JavaScript",
-    "agent": "claude_code",
-    "count": 168
+    "count": 176
   },
   {
     "language": "Python",
     "agent": "aider",
-    "count": 168
-  },
-  {
-    "language": "Shell",
-    "agent": "aider",
-    "count": 119
+    "count": 175
   },
   {
     "language": "HTML",
     "agent": "claude_code",
-    "count": 114
+    "count": 141
   },
   {
     "language": "Shell",
     "agent": "claude_code",
-    "count": 108
+    "count": 128
+  },
+  {
+    "language": "Shell",
+    "agent": "aider",
+    "count": 124
   },
   {
     "language": "JavaScript",
     "agent": "cursor",
-    "count": 107
-  },
-  {
-    "language": "JavaScript",
-    "agent": "copilot",
-    "count": 97
-  },
-  {
-    "language": "TypeScript",
-    "agent": "aider",
-    "count": 91
+    "count": 110
   },
   {
     "language": "Rust",
     "agent": "claude_code",
-    "count": 84
+    "count": 104
+  },
+  {
+    "language": "JavaScript",
+    "agent": "copilot",
+    "count": 100
+  },
+  {
+    "language": "TypeScript",
+    "agent": "aider",
+    "count": 97
+  },
+  {
+    "language": "Go",
+    "agent": "claude_code",
+    "count": 91
   },
   {
     "language": "JavaScript",
     "agent": "windsurf",
     "count": 83
-  },
-  {
-    "language": "Go",
-    "agent": "claude_code",
-    "count": 74
   },
   {
     "language": "JavaScript",
@@ -112,16 +112,16 @@
   {
     "language": "C#",
     "agent": "copilot",
-    "count": 64
-  },
-  {
-    "language": "Go",
-    "agent": "codex",
-    "count": 60
+    "count": 67
   },
   {
     "language": "TypeScript",
     "agent": "devin",
+    "count": 66
+  },
+  {
+    "language": "Go",
+    "agent": "codex",
     "count": 60
   },
   {
@@ -137,6 +137,16 @@
   {
     "language": "HTML",
     "agent": "copilot",
+    "count": 49
+  },
+  {
+    "language": "C#",
+    "agent": "claude_code",
+    "count": 46
+  },
+  {
+    "language": "Python",
+    "agent": "devin",
     "count": 46
   },
   {
@@ -150,24 +160,29 @@
     "count": 43
   },
   {
-    "language": "Python",
-    "agent": "devin",
-    "count": 41
+    "language": "Swift",
+    "agent": "claude_code",
+    "count": 43
   },
   {
     "language": "HTML",
     "agent": "cursor",
-    "count": 38
+    "count": 40
   },
   {
-    "language": "Swift",
-    "agent": "claude_code",
-    "count": 37
-  },
-  {
-    "language": "C#",
+    "language": "Java",
     "agent": "claude_code",
     "count": 36
+  },
+  {
+    "language": "C++",
+    "agent": "claude_code",
+    "count": 35
+  },
+  {
+    "language": "Go",
+    "agent": "copilot",
+    "count": 35
   },
   {
     "language": "Shell",
@@ -180,14 +195,19 @@
     "count": 33
   },
   {
-    "language": "Go",
-    "agent": "copilot",
-    "count": 32
+    "language": "Jupyter Notebook",
+    "agent": "claude_code",
+    "count": 33
   },
   {
-    "language": "Java",
+    "language": "PHP",
     "agent": "claude_code",
-    "count": 31
+    "count": 33
+  },
+  {
+    "language": "Kotlin",
+    "agent": "claude_code",
+    "count": 32
   },
   {
     "language": "C#",
@@ -197,27 +217,22 @@
   {
     "language": "HTML",
     "agent": "devin",
-    "count": 29
+    "count": 30
   },
   {
-    "language": "Jupyter Notebook",
+    "language": "Vue",
     "agent": "claude_code",
-    "count": 29
-  },
-  {
-    "language": "C++",
-    "agent": "claude_code",
-    "count": 28
+    "count": 30
   },
   {
     "language": "JavaScript",
     "agent": "aider",
-    "count": 27
+    "count": 28
   },
   {
     "language": "PHP",
     "agent": "copilot",
-    "count": 26
+    "count": 27
   },
   {
     "language": "Go",
@@ -230,19 +245,19 @@
     "count": 25
   },
   {
+    "language": "Dart",
+    "agent": "copilot",
+    "count": 23
+  },
+  {
     "language": "Go",
     "agent": "cursor",
     "count": 23
   },
   {
-    "language": "Kotlin",
+    "language": "C",
     "agent": "claude_code",
-    "count": 23
-  },
-  {
-    "language": "PHP",
-    "agent": "claude_code",
-    "count": 23
+    "count": 22
   },
   {
     "language": "JavaScript",
@@ -250,9 +265,14 @@
     "count": 22
   },
   {
-    "language": "Vue",
-    "agent": "claude_code",
+    "language": "Rust",
+    "agent": "copilot",
     "count": 22
+  },
+  {
+    "language": "Astro",
+    "agent": "claude_code",
+    "count": 21
   },
   {
     "language": "C#",
@@ -260,13 +280,18 @@
     "count": 21
   },
   {
-    "language": "Dart",
-    "agent": "copilot",
+    "language": "Jupyter Notebook",
+    "agent": "cursor",
     "count": 21
   },
   {
     "language": "PHP",
     "agent": "windsurf",
+    "count": 21
+  },
+  {
+    "language": "Rust",
+    "agent": "aider",
     "count": 21
   },
   {
@@ -285,29 +310,24 @@
     "count": 21
   },
   {
-    "language": "C",
-    "agent": "claude_code",
-    "count": 20
-  },
-  {
     "language": "Java",
     "agent": "codex",
     "count": 20
   },
   {
-    "language": "Jupyter Notebook",
-    "agent": "cursor",
-    "count": 20
-  },
-  {
-    "language": "Rust",
+    "language": "Shell",
     "agent": "copilot",
-    "count": 20
+    "count": 19
   },
   {
-    "language": "Rust",
-    "agent": "aider",
-    "count": 19
+    "language": "CSS",
+    "agent": "claude_code",
+    "count": 18
+  },
+  {
+    "language": "Dart",
+    "agent": "claude_code",
+    "count": 18
   },
   {
     "language": "Vue",
@@ -326,6 +346,11 @@
   },
   {
     "language": "Java",
+    "agent": "copilot",
+    "count": 17
+  },
+  {
+    "language": "Java",
     "agent": "windsurf",
     "count": 17
   },
@@ -335,23 +360,23 @@
     "count": 17
   },
   {
-    "language": "Shell",
-    "agent": "copilot",
-    "count": 17
-  },
-  {
-    "language": "Astro",
-    "agent": "claude_code",
-    "count": 16
-  },
-  {
     "language": "C++",
     "agent": "codex",
     "count": 16
   },
   {
+    "language": "Lua",
+    "agent": "claude_code",
+    "count": 16
+  },
+  {
     "language": "PHP",
     "agent": "cursor",
+    "count": 16
+  },
+  {
+    "language": "Python",
+    "agent": "continue",
     "count": 16
   },
   {
@@ -370,13 +395,13 @@
     "count": 15
   },
   {
-    "language": "Java",
-    "agent": "copilot",
+    "language": "Jupyter Notebook",
+    "agent": "windsurf",
     "count": 15
   },
   {
-    "language": "Jupyter Notebook",
-    "agent": "windsurf",
+    "language": "MDX",
+    "agent": "claude_code",
     "count": 15
   },
   {
@@ -400,18 +425,13 @@
     "count": 14
   },
   {
-    "language": "Python",
-    "agent": "continue",
-    "count": 14
-  },
-  {
     "language": "C#",
     "agent": "cursor",
     "count": 13
   },
   {
-    "language": "CSS",
-    "agent": "claude_code",
+    "language": "HTML",
+    "agent": "aider",
     "count": 13
   },
   {
@@ -435,28 +455,13 @@
     "count": 12
   },
   {
-    "language": "Dart",
-    "agent": "claude_code",
-    "count": 12
-  },
-  {
-    "language": "HTML",
-    "agent": "aider",
-    "count": 12
-  },
-  {
     "language": "Jupyter Notebook",
     "agent": "copilot",
     "count": 12
   },
   {
-    "language": "Lua",
-    "agent": "claude_code",
-    "count": 12
-  },
-  {
     "language": "MDX",
-    "agent": "claude_code",
+    "agent": "devin",
     "count": 12
   },
   {
@@ -470,6 +475,11 @@
     "count": 11
   },
   {
+    "language": "Kotlin",
+    "agent": "copilot",
+    "count": 11
+  },
+  {
     "language": "Nix",
     "agent": "aider",
     "count": 11
@@ -477,6 +487,16 @@
   {
     "language": "Nix",
     "agent": "codex",
+    "count": 11
+  },
+  {
+    "language": "Ruby",
+    "agent": "claude_code",
+    "count": 11
+  },
+  {
+    "language": "Svelte",
+    "agent": "claude_code",
     "count": 11
   },
   {
@@ -505,18 +525,18 @@
     "count": 10
   },
   {
-    "language": "Kotlin",
-    "agent": "copilot",
-    "count": 10
-  },
-  {
-    "language": "MDX",
-    "agent": "devin",
-    "count": 10
-  },
-  {
-    "language": "Ruby",
+    "language": "Nix",
     "agent": "claude_code",
+    "count": 10
+  },
+  {
+    "language": "PowerShell",
+    "agent": "claude_code",
+    "count": 10
+  },
+  {
+    "language": "PowerShell",
+    "agent": "copilot",
     "count": 10
   },
   {
@@ -530,23 +550,13 @@
     "count": 9
   },
   {
+    "language": "Elixir",
+    "agent": "claude_code",
+    "count": 9
+  },
+  {
     "language": "Lua",
     "agent": "codex",
-    "count": 9
-  },
-  {
-    "language": "Nix",
-    "agent": "claude_code",
-    "count": 9
-  },
-  {
-    "language": "PowerShell",
-    "agent": "claude_code",
-    "count": 9
-  },
-  {
-    "language": "PowerShell",
-    "agent": "copilot",
     "count": 9
   },
   {
@@ -585,11 +595,6 @@
     "count": 7
   },
   {
-    "language": "Elixir",
-    "agent": "claude_code",
-    "count": 7
-  },
-  {
     "language": "Java",
     "agent": "devin",
     "count": 7
@@ -602,6 +607,11 @@
   {
     "language": "Ruby",
     "agent": "copilot",
+    "count": 7
+  },
+  {
+    "language": "Ruby",
+    "agent": "windsurf",
     "count": 7
   },
   {
@@ -625,6 +635,26 @@
     "count": 6
   },
   {
+    "language": "Blade",
+    "agent": "copilot",
+    "count": 6
+  },
+  {
+    "language": "CSS",
+    "agent": "cursor",
+    "count": 6
+  },
+  {
+    "language": "Dockerfile",
+    "agent": "copilot",
+    "count": 6
+  },
+  {
+    "language": "Emacs Lisp",
+    "agent": "claude_code",
+    "count": 6
+  },
+  {
     "language": "PHP",
     "agent": "aider",
     "count": 6
@@ -635,12 +665,17 @@
     "count": 6
   },
   {
-    "language": "Ruby",
-    "agent": "windsurf",
+    "language": "R",
+    "agent": "claude_code",
     "count": 6
   },
   {
-    "language": "Svelte",
+    "language": "Shell",
+    "agent": "devin",
+    "count": 6
+  },
+  {
+    "language": "Solidity",
     "agent": "claude_code",
     "count": 6
   },
@@ -656,7 +691,7 @@
   },
   {
     "language": "Blade",
-    "agent": "copilot",
+    "agent": "claude_code",
     "count": 5
   },
   {
@@ -685,12 +720,7 @@
     "count": 5
   },
   {
-    "language": "CSS",
-    "agent": "cursor",
-    "count": 5
-  },
-  {
-    "language": "Emacs Lisp",
+    "language": "GDScript",
     "agent": "claude_code",
     "count": 5
   },
@@ -705,29 +735,19 @@
     "count": 5
   },
   {
-    "language": "R",
-    "agent": "claude_code",
-    "count": 5
-  },
-  {
     "language": "Ruby",
     "agent": "devin",
-    "count": 5
-  },
-  {
-    "language": "Shell",
-    "agent": "devin",
-    "count": 5
-  },
-  {
-    "language": "Solidity",
-    "agent": "claude_code",
     "count": 5
   },
   {
     "language": "Svelte",
     "agent": "cursor",
     "count": 5
+  },
+  {
+    "language": "AL",
+    "agent": "claude_code",
+    "count": 4
   },
   {
     "language": "Astro",
@@ -755,13 +775,13 @@
     "count": 4
   },
   {
-    "language": "Dockerfile",
-    "agent": "aider",
+    "language": "Clojure",
+    "agent": "claude_code",
     "count": 4
   },
   {
     "language": "Dockerfile",
-    "agent": "copilot",
+    "agent": "aider",
     "count": 4
   },
   {
@@ -775,7 +795,17 @@
     "count": 4
   },
   {
+    "language": "JavaScript",
+    "agent": "continue",
+    "count": 4
+  },
+  {
     "language": "Jinja",
+    "agent": "claude_code",
+    "count": 4
+  },
+  {
+    "language": "Julia",
     "agent": "claude_code",
     "count": 4
   },
@@ -792,6 +822,11 @@
   {
     "language": "Makefile",
     "agent": "aider",
+    "count": 4
+  },
+  {
+    "language": "Makefile",
+    "agent": "claude_code",
     "count": 4
   },
   {
@@ -835,6 +870,11 @@
     "count": 4
   },
   {
+    "language": "TeX",
+    "agent": "claude_code",
+    "count": 4
+  },
+  {
     "language": "Astro",
     "agent": "aider",
     "count": 3
@@ -847,11 +887,6 @@
   {
     "language": "Clojure",
     "agent": "aider",
-    "count": 3
-  },
-  {
-    "language": "Clojure",
-    "agent": "claude_code",
     "count": 3
   },
   {
@@ -871,32 +906,12 @@
   },
   {
     "language": "GDScript",
-    "agent": "claude_code",
-    "count": 3
-  },
-  {
-    "language": "GDScript",
     "agent": "cursor",
     "count": 3
   },
   {
     "language": "HCL",
     "agent": "windsurf",
-    "count": 3
-  },
-  {
-    "language": "JavaScript",
-    "agent": "continue",
-    "count": 3
-  },
-  {
-    "language": "Julia",
-    "agent": "claude_code",
-    "count": 3
-  },
-  {
-    "language": "Makefile",
-    "agent": "claude_code",
     "count": 3
   },
   {
@@ -915,13 +930,13 @@
     "count": 3
   },
   {
-    "language": "Smarty",
-    "agent": "aider",
+    "language": "ShaderLab",
+    "agent": "claude_code",
     "count": 3
   },
   {
-    "language": "TeX",
-    "agent": "claude_code",
+    "language": "Smarty",
+    "agent": "aider",
     "count": 3
   },
   {
@@ -946,11 +961,6 @@
   },
   {
     "language": "Blade",
-    "agent": "claude_code",
-    "count": 2
-  },
-  {
-    "language": "Blade",
     "agent": "cursor",
     "count": 2
   },
@@ -960,8 +970,23 @@
     "count": 2
   },
   {
+    "language": "Elixir",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "language": "GDScript",
+    "agent": "aider",
+    "count": 2
+  },
+  {
     "language": "Go Template",
     "agent": "codex",
+    "count": 2
+  },
+  {
+    "language": "HCL",
+    "agent": "claude_code",
     "count": 2
   },
   {
@@ -1045,6 +1070,11 @@
     "count": 2
   },
   {
+    "language": "PowerShell",
+    "agent": "continue",
+    "count": 2
+  },
+  {
     "language": "Prolog",
     "agent": "aider",
     "count": 2
@@ -1067,11 +1097,6 @@
   {
     "language": "Scheme",
     "agent": "codex",
-    "count": 2
-  },
-  {
-    "language": "ShaderLab",
-    "agent": "claude_code",
     "count": 2
   },
   {
@@ -1135,6 +1160,11 @@
     "count": 1
   },
   {
+    "language": "BrighterScript",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
     "language": "Bru",
     "agent": "aider",
     "count": 1
@@ -1195,6 +1225,11 @@
     "count": 1
   },
   {
+    "language": "Dockerfile",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
     "language": "E",
     "agent": "cursor",
     "count": 1
@@ -1206,7 +1241,7 @@
   },
   {
     "language": "Elixir",
-    "agent": "aider",
+    "agent": "copilot",
     "count": 1
   },
   {
@@ -1251,11 +1286,6 @@
   },
   {
     "language": "GDB",
-    "agent": "aider",
-    "count": 1
-  },
-  {
-    "language": "GDScript",
     "agent": "aider",
     "count": 1
   },
@@ -1356,6 +1386,11 @@
   },
   {
     "language": "Liquid",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "language": "Liquid",
     "agent": "cursor",
     "count": 1
   },
@@ -1372,6 +1407,11 @@
   {
     "language": "MDX",
     "agent": "aider",
+    "count": 1
+  },
+  {
+    "language": "MDX",
+    "agent": "copilot",
     "count": 1
   },
   {
@@ -1420,6 +1460,11 @@
     "count": 1
   },
   {
+    "language": "Mermaid",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
     "language": "MoonBit",
     "agent": "claude_code",
     "count": 1
@@ -1460,6 +1505,11 @@
     "count": 1
   },
   {
+    "language": "Odin",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
     "language": "OpenSCAD",
     "agent": "windsurf",
     "count": 1
@@ -1472,11 +1522,6 @@
   {
     "language": "PLpgSQL",
     "agent": "codex",
-    "count": 1
-  },
-  {
-    "language": "PowerShell",
-    "agent": "continue",
     "count": 1
   },
   {
@@ -1522,6 +1567,11 @@
   {
     "language": "Scheme",
     "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "language": "Solidity",
+    "agent": "copilot",
     "count": 1
   },
   {
@@ -1577,6 +1627,11 @@
   {
     "language": "XSLT",
     "agent": "copilot",
+    "count": 1
+  },
+  {
+    "language": "XSLT",
+    "agent": "devin",
     "count": 1
   },
   {
