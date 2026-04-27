@@ -12,6 +12,7 @@ let _timeline    = [];
 let _langData    = [];
 let _starsData   = [];
 let _starsTlData = [];
+let _hoveredStarsTick = -1;
 let _selected = new Set();      // agent keys currently visible
 let _topLangs = [];             // top 10 languages (computed once)
 let _selectedLangs = new Set(); // languages currently visible
@@ -302,7 +303,10 @@ function renderStars() {
         legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
       },
       scales: {
-        x: { grid: { display: false } },
+        x: {
+          grid: { display: false },
+          ticks: { color: ctx => ctx.index === _hoveredStarsTick ? '#4f8ef7' : '#8b949e' },
+        },
         y: {
           type: 'logarithmic',
           grid: { color: '#21262d' },
@@ -312,46 +316,52 @@ function renderStars() {
     },
   });
 
-  // Native listeners — Chart.js onHover/onClick don't fire reliably outside the plot area
-  const canvas = document.getElementById('chart-stars');
-  const tooltip = document.getElementById('chart-tooltip');
-  canvas.addEventListener('mousemove', e => {
+  // Overlay real <a> elements over each bucket label for native link behaviour
+  // (right-click → Open in New Tab, middle-click, etc.)
+  const wrapper = document.getElementById('chart-stars-wrapper');
+  wrapper.querySelectorAll('.bucket-link').forEach(el => el.remove());
+
+  const chart = _charts['chart-stars'];
+  const xScale = chart.scales.x;
+  const labelTop  = chart.chartArea.bottom;
+  const labelH    = xScale.bottom - labelTop;
+
+  BUCKETS.forEach((bucket, i) => {
+    const cx = xScale.getPixelForTick(i);
+    const a = document.createElement('a');
+    a.className = 'bucket-link';
+    a.href = `evolution.html?bucket=${encodeURIComponent(bucket)}`;
+    a.dataset.idx = i;
+    a.style.cssText = `position:absolute;left:${cx - 50}px;top:${labelTop}px;width:100px;height:${labelH}px;`;
+    wrapper.appendChild(a);
+  });
+
+  // Mousemove on wrapper covers both canvas and overlay links
+  wrapper.addEventListener('mousemove', e => {
     const chart = _charts['chart-stars'];
     if (!chart) return;
-    const rect = canvas.getBoundingClientRect();
+    const rect = chart.canvas.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     const xScale = chart.scales.x;
     const inLabelBand = y > chart.chartArea.bottom && y < xScale.bottom;
-    const nearTick = inLabelBand && xScale.ticks.some((_, i) => Math.abs(x - xScale.getPixelForTick(i)) < 60);
-    canvas.style.cursor = nearTick ? 'pointer' : 'default';
-    if (nearTick) {
-      tooltip.style.display = 'block';
-      tooltip.style.left = (e.clientX + 12) + 'px';
-      tooltip.style.top  = (e.clientY - 28) + 'px';
-    } else {
-      tooltip.style.display = 'none';
+    let hovered = -1;
+    if (inLabelBand) {
+      let minDist = Infinity;
+      xScale.ticks.forEach((_, i) => {
+        const dist = Math.abs(x - xScale.getPixelForTick(i));
+        if (dist < 60 && dist < minDist) { minDist = dist; hovered = i; }
+      });
+    }
+    if (hovered !== _hoveredStarsTick) {
+      _hoveredStarsTick = hovered;
+      chart.update('none');
     }
   });
-  canvas.addEventListener('mouseleave', () => {
-    canvas.style.cursor = 'default';
-    tooltip.style.display = 'none';
-  });
-  canvas.addEventListener('click', e => {
-    const chart = _charts['chart-stars'];
-    if (!chart) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    if (y <= chart.chartArea.bottom || y >= chart.scales.x.bottom) return;
-    const xScale = chart.scales.x;
-    let closest = -1, minDist = Infinity;
-    xScale.ticks.forEach((_, i) => {
-      const dist = Math.abs(x - xScale.getPixelForTick(i));
-      if (dist < minDist) { minDist = dist; closest = i; }
-    });
-    if (closest >= 0 && minDist < 60) {
-      window.open(`evolution.html?bucket=${encodeURIComponent(BUCKETS[closest])}`, '_blank');
+  wrapper.addEventListener('mouseleave', () => {
+    if (_hoveredStarsTick !== -1) {
+      _hoveredStarsTick = -1;
+      _charts['chart-stars']?.update('none');
     }
   });
 }
