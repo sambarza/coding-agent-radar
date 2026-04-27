@@ -13,6 +13,7 @@ def export_all() -> None:
     _export_agents()
     _export_timeline()
     _export_languages()
+    _export_languages_timeline()
     _export_stars()
     _export_stars_timeline()
     _export_scan_meta()
@@ -72,6 +73,30 @@ def _export_languages() -> None:
 
     data = [{"language": r["language"], "agent": r["agent"], "count": r["count"]} for r in rows]
     _write("languages.json", data)
+
+
+def _export_languages_timeline() -> None:
+    """Append this week's language×agent snapshot to languages_timeline.json."""
+    week = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    path = PUBLIC_DIR / "languages_timeline.json"
+
+    existing: list[dict] = json.loads(path.read_text()) if path.exists() else []
+    existing = [r for r in existing if r.get("week") != week]
+
+    with get_conn() as conn:
+        rows = conn.execute("""
+            SELECT language, agent, COUNT(*) AS count
+            FROM detections
+            WHERE language IS NOT NULL
+            GROUP BY language, agent
+        """).fetchall()
+
+    for r in rows:
+        existing.append({"week": week, "language": r["language"], "agent": r["agent"], "count": r["count"]})
+
+    existing.sort(key=lambda r: (r["week"], r["language"], r["agent"]))
+    path.write_text(json.dumps(existing, indent=2))
+    print(f"  → languages_timeline.json (week {week}, {len(rows)} rows)")
 
 
 def _export_stars() -> None:

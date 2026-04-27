@@ -508,7 +508,7 @@
   <div class="panel">
     <div class="panel-header">
       <h2>Repository Popularity by Agent (stars)</h2>
-      <span style="font-size:11px;color:var(--muted)">Click a label to explore evolution →</span>
+      <span style="font-size:11px;color:var(--muted)">Click on a bucket to see the trend</span>
     </div>
     <div id="chart-stars-wrapper" style="position:relative">
       <canvas id="chart-stars" height="180"></canvas>
@@ -520,8 +520,11 @@
   <div class="panel">
     <div class="panel-header">
       <h2>Agent Share by Language (%)</h2>
+      <span style="font-size:11px;color:var(--muted)">Click on a language to see the trend</span>
     </div>
-    <canvas id="chart-languages" height="180"></canvas>
+    <div id="chart-languages-wrapper" style="position:relative">
+      <canvas id="chart-languages" height="180"></canvas>
+    </div>
   </div>
 
   <div class="panel" style="margin-top:12px">

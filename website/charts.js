@@ -13,6 +13,7 @@ let _langData    = [];
 let _starsData   = [];
 let _starsTlData = [];
 let _hoveredStarsTick = -1;
+let _hoveredLangTick  = -1;
 let _selected = new Set();      // agent keys currently visible
 let _topLangs = [];             // top 10 languages (computed once)
 let _selectedLangs = new Set(); // languages currently visible
@@ -222,7 +223,10 @@ function renderLanguages() {
         tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y}%` } },
       },
       scales: {
-        x: { grid: { display: false } },
+        x: {
+          grid: { display: false },
+          ticks: { color: ctx => ctx.index === _hoveredLangTick ? '#4f8ef7' : '#8b949e' },
+        },
         y: {
           type: 'logarithmic',
           grid: { color: '#21262d' },
@@ -230,6 +234,52 @@ function renderLanguages() {
         },
       },
     },
+  });
+
+  const wrapper = document.getElementById('chart-languages-wrapper');
+  wrapper.querySelectorAll('.lang-link').forEach(el => el.remove());
+
+  const chart = _charts['chart-languages'];
+  const xScale = chart.scales.x;
+  const labelTop = chart.chartArea.bottom;
+  const labelH   = xScale.bottom - labelTop;
+
+  langs.forEach((lang, i) => {
+    const cx = xScale.getPixelForTick(i);
+    const a = document.createElement('a');
+    a.className = 'lang-link';
+    a.href = `evolution-language.html?lang=${encodeURIComponent(lang)}`;
+    a.dataset.idx = i;
+    a.style.cssText = `position:absolute;left:${cx - 50}px;top:${labelTop}px;width:100px;height:${labelH}px;`;
+    wrapper.appendChild(a);
+  });
+
+  wrapper.addEventListener('mousemove', e => {
+    const chart = _charts['chart-languages'];
+    if (!chart) return;
+    const rect = chart.canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const xScale = chart.scales.x;
+    const inLabelBand = y > chart.chartArea.bottom && y < xScale.bottom;
+    let hovered = -1;
+    if (inLabelBand) {
+      let minDist = Infinity;
+      xScale.ticks.forEach((_, i) => {
+        const dist = Math.abs(x - xScale.getPixelForTick(i));
+        if (dist < 60 && dist < minDist) { minDist = dist; hovered = i; }
+      });
+    }
+    if (hovered !== _hoveredLangTick) {
+      _hoveredLangTick = hovered;
+      chart.update('none');
+    }
+  });
+  wrapper.addEventListener('mouseleave', () => {
+    if (_hoveredLangTick !== -1) {
+      _hoveredLangTick = -1;
+      _charts['chart-languages']?.update('none');
+    }
   });
 }
 
@@ -381,7 +431,7 @@ function renderCharts() {
 async function init() {
   // Load all data in parallel
   [_agents, _timeline, _langData, _starsData, _starsTlData] = await Promise.all([
-    load('agents.json'), load('timeline.json'), load('languages.json'), load('stars.json'), load('stars_timeline.json'),
+    load('agents.json'), load('timeline.json'), load('languages.json'), load('stars.json'), load('stars_timeline.json'), load('languages_timeline.json'),
   ]);
 
   // Default: all agents and languages selected

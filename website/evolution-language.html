@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolution — Coding Agent Radar</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #080c14;
+      --surface:   #0f1724;
+      --surface2:  #162032;
+      --border:    #1e2d42;
+      --text:      #e2e8f0;
+      --muted:     #4d6585;
+      --subtle:    #2a3f58;
+      --accent:    #4f8ef7;
+      --radius:    10px;
+      --max-width: 1200px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header-left h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.3px; color: var(--text); }
+    .header-left p  { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+    .header-right { display: flex; align-items: center; gap: 12px; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #22c55e; }
+
+    .star-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 12px;
+      font-family: inherit;
+      text-decoration: none;
+      transition: border-color 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+
+    .star-btn:hover { border-color: #f59e0b; color: #f59e0b; }
+    .star-btn-icon { width: 13px; height: 13px; flex-shrink: 0; }
+    .star-btn-count { color: var(--text); }
+    .star-btn-count:not(:empty) { padding-left: 6px; margin-left: 2px; border-left: 1px solid var(--border); }
+
+    .agent-filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+
+    .agent-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: var(--text);
+      font-family: inherit;
+    }
+
+    .draft-banner {
+      background: #1c1500;
+      border: 1px solid #5a3e00;
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      color: #f59e0b;
+      font-size: 13px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .draft-banner strong { font-weight: 700; }
+
+    .methodology {
+      margin-bottom: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 24px;
+    }
+
+    .methodology[open] { padding-bottom: 24px; }
+
+    .methodology summary {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      list-style: none;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      user-select: none;
+      width: fit-content;
+    }
+
+    .methodology summary::-webkit-details-marker { display: none; }
+    .methodology summary .chevron { font-size: 10px; transition: transform 0.2s; }
+    .methodology[open] summary .chevron { transform: rotate(90deg); }
+
+    .methodology-body { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; }
+
+    .methodology-section h3 {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .methodology-section p { color: var(--subtle); font-size: 13px; line-height: 1.7; margin-bottom: 10px; }
+
+    .signal-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 12px; }
+    .signal-table tr { border-bottom: 1px solid var(--border); }
+    .signal-table tr:last-child { border-bottom: none; }
+    .signal-table td { padding: 6px 0; vertical-align: middle; }
+    .signal-table .agent-name { color: var(--muted); width: 140px; padding-right: 12px; white-space: nowrap; }
+    .signal-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+
+    .signal {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-family: ui-monospace, "Cascadia Code", monospace;
+      font-size: 11px;
+      color: var(--accent);
+    }
+
+    .limitations { list-style: none; padding: 0; }
+    .limitations li { color: var(--subtle); font-size: 13px; padding: 3px 0 3px 14px; position: relative; }
+    .limitations li::before { content: "–"; position: absolute; left: 0; color: var(--muted); }
+
+    .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; }
+    .card .value { font-size: 32px; font-weight: 700; color: var(--accent); letter-spacing: -1px; line-height: 1; }
+    .card .label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.6px; margin-top: 8px; }
+
+    .chart-heading { margin-bottom: 24px; }
+    .chart-heading h2 { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
+    .chart-heading p  { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+    .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+
+    canvas { width: 100% !important; }
+
+    #error {
+      display: none;
+      background: #160a0a;
+      border: 1px solid #3d1515;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      color: #f87171;
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .cards { grid-template-columns: repeat(2, 1fr); }
+      .methodology-body { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .cards { grid-template-columns: 1fr 1fr; }
+      .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .header-right { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <h1>Coding Agent Radar</h1>
+      <p>Adoption of AI coding agents across public GitHub repositories</p>
+    </div>
+    <div class="header-right">
+      <div class="badge">
+        <span class="dot"></span>
+        <span id="meta-date">Loading...</span>
+      </div>
+      <a class="star-btn" href="https://github.com/sambarza/coding-agent-radar" target="_blank" rel="noopener" aria-label="Star on GitHub">
+        <svg class="star-btn-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+          <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.872 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
+        </svg>
+        <span>GitHub Star</span>
+        <span class="star-btn-count" id="star-count"></span>
+      </a>
+    </div>
+  </div>
+
+  <div id="error"></div>
+
+  <div class="agent-filter" id="agent-filter"></div>
+
+  <div class="draft-banner">
+    <strong>⚠ Draft methodology — work in progress.</strong>
+    The detection rules are a starting point, not a definitive standard.
+    A config file in a repo is a weak signal: it may be a template, a fork, an experiment, or simply outdated.
+    Treat all numbers as rough approximations, not ground truth.
+  </div>
+
+  <details class="methodology">
+    <summary>
+      <span class="chevron">▶</span>
+      Methodology
+    </summary>
+    <div class="methodology-body">
+      <div class="methodology-section">
+        <h3>Detection strategy</h3>
+        <p>
+          A repository is counted as using a coding agent when it contains one or more
+          agent-specific config files. No file contents are read and no LLM is involved.
+        </p>
+        <table class="signal-table" id="signal-list"></table>
+      </div>
+      <div class="methodology-section">
+        <h3>Data collection</h3>
+        <p>
+          For each signal file the GitHub Code Search API is queried (up to 1000 results
+          per signal). Results are returned in best-match order. Each matched repository
+          is enriched with full metadata via a separate API call, cached to avoid
+          redundant fetches across signals.
+        </p>
+        <p>
+          A repository is counted once per agent regardless of how many of its signal
+          files match. The scanner runs weekly and preserves original
+          discovery dates across re-runs.
+        </p>
+        <h3 style="margin-top:16px">Limitations</h3>
+        <ul class="limitations">
+          <li>Repos using an agent without committing a config file are not counted.</li>
+          <li>Only public GitHub repositories are covered.</li>
+          <li>The timeline reflects scan date, not the original commit date.</li>
+          <li>All <a href="https://docs.github.com/en/rest/search/search?apiVersion=2026-03-10#about-search" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">GitHub Code Search API</a> limitations apply — including the 1000 result cap per query, index delays, and potential gaps in coverage for recently pushed or low-activity repositories.</li>
+          <li>GitHub forces results to be sorted by relevance ("best match") — sorting by stars is not supported by the API. High-starred repos are therefore not guaranteed to appear and may be missing from the data.</li>
+        </ul>
+      </div>
+    </div>
+  </details>
+
+  <div class="cards">
+    <div class="card">
+      <div class="value" id="stat-total">—</div>
+      <div class="label">Total detections</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-agents">—</div>
+      <div class="label">Agents tracked</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-last-repos">—</div>
+      <div class="label">Repos last scan</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-new">—</div>
+      <div class="label">New last scan</div>
+    </div>
+  </div>
+
+  <div class="chart-heading">
+    <a href="index.html" style="display:inline-block;margin-bottom:12px;font-size:13px;color:var(--muted);text-decoration:none;">← Back to Radar</a>
+    <h2 id="title">Agent Share Evolution</h2>
+    <p id="subtitle">Agent share (%) over time</p>
+  </div>
+
+  <div class="panel">
+    <canvas id="chart-evolution" height="320"></canvas>
+  </div>
+
+</div>
+<script>
+const BASE = './public/';
+
+Chart.defaults.color = '#8b949e';
+Chart.defaults.borderColor = '#30363d';
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+Chart.defaults.font.size = 12;
+
+function fmt(n) {
+  return n >= 1000 ? (n / 1000).toFixed(1) + 'k' : String(n);
+}
+
+function showError(msg) {
+  const el = document.getElementById('error');
+  el.style.display = 'block';
+  el.textContent = msg;
+}
+
+async function load(file) {
+  const res = await fetch(BASE + file);
+  if (!res.ok) throw new Error(`Failed to load ${file}: ${res.status}`);
+  return res.json();
+}
+
+async function loadStarCount() {
+  try {
+    const res = await fetch('https://api.github.com/repos/sambarza/coding-agent-radar');
+    if (!res.ok) return;
+    const { stargazers_count } = await res.json();
+    const el = document.getElementById('star-count');
+    if (el) el.textContent = fmt(stargazers_count);
+  } catch (_) {}
+}
+
+async function init() {
+  const params = new URLSearchParams(location.search);
+  const lang = params.get('lang');
+  if (!lang) { showError('No language specified.'); return; }
+
+  document.getElementById('title').textContent = `Agent Share Evolution — ${lang}`;
+  document.getElementById('subtitle').textContent = `How each agent's share of ${lang} repos changed over time`;
+  document.title = `Evolution: ${lang} — Coding Agent Radar`;
+
+  const [agents, meta, langsTl] = await Promise.all([
+    load('agents.json'),
+    load('scan_meta.json'),
+    load('languages_timeline.json'),
+  ]);
+
+  // Header meta
+  const date = meta.last_scan
+    ? new Date(meta.last_scan).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+    : 'never';
+  document.getElementById('meta-date').textContent = `Last scan: ${date}`;
+
+  // Stat cards
+  document.getElementById('stat-total').textContent = fmt(meta.total_detections);
+  document.getElementById('stat-agents').textContent = agents.length;
+  document.getElementById('stat-last-repos').textContent = fmt(meta.repos_scanned_last_run);
+  document.getElementById('stat-new').textContent = fmt(meta.new_detections_last_run);
+
+  // Agent pills
+  const filterEl = document.getElementById('agent-filter');
+  agents.forEach(a => {
+    const btn = document.createElement('button');
+    btn.className = 'agent-toggle';
+    btn.textContent = a.label;
+    btn.style.borderColor = a.color;
+    filterEl.appendChild(btn);
+  });
+
+  // Signal table
+  const signalList = document.getElementById('signal-list');
+  agents.forEach(a => {
+    if (!a.signals || a.signals.length === 0) return;
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    tdName.className = 'agent-name';
+    tdName.textContent = a.label;
+    const tdPills = document.createElement('td');
+    const pillsWrapper = document.createElement('div');
+    pillsWrapper.className = 'signal-pills';
+    a.signals.forEach(sig => {
+      const pill = document.createElement('span');
+      pill.className = 'signal';
+      pill.textContent = sig;
+      pillsWrapper.appendChild(pill);
+    });
+    tdPills.appendChild(pillsWrapper);
+    tr.appendChild(tdName);
+    tr.appendChild(tdPills);
+    signalList.appendChild(tr);
+  });
+
+  // Chart — compute % share per agent per week for this language
+  const agentMap = Object.fromEntries(agents.map(a => [a.agent, a]));
+  const rows = langsTl.filter(r => r.language === lang);
+  const dates = [...new Set(rows.map(r => r.week))].sort();
+  const agentKeys = [...new Set(rows.map(r => r.agent))];
+
+  const datasets = agentKeys.map(key => {
+    const meta = agentMap[key] || { label: key, color: '#cccccc' };
+    return {
+      label:           meta.label,
+      borderColor:     meta.color,
+      backgroundColor: meta.color + '22',
+      fill: false,
+      tension: 0.3,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      data: dates.map(d => {
+        const weekRows = rows.filter(r => r.week === d);
+        const total = weekRows.reduce((s, r) => s + r.count, 0);
+        const row = weekRows.find(r => r.agent === key);
+        if (!row || !total) return null;
+        return Math.round(row.count / total * 1000) / 10;
+      }),
+    };
+  }).filter(ds => ds.data.some(v => v !== null));
+
+  new Chart(document.getElementById('chart-evolution'), {
+    type: 'line',
+    data: { labels: dates, datasets },
+    options: {
+      plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y}%` } },
+      },
+      scales: {
+        x: { grid: { color: '#21262d' } },
+        y: {
+          grid: { color: '#21262d' },
+          ticks: { callback: v => v + '%' },
+        },
+      },
+    },
+  });
+}
+
+init().catch(err => showError(`Could not load data: ${err.message}`));
+loadStarCount();
+</script>
+</body>
+</html>
