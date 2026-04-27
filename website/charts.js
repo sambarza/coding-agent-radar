@@ -7,10 +7,11 @@ Chart.defaults.font.size = 12;
 
 // ── Global data cache ─────────────────────────────────────────────────────────
 
-let _agents   = [];
-let _timeline = [];
-let _langData = [];
-let _starsData = [];
+let _agents      = [];
+let _timeline    = [];
+let _langData    = [];
+let _starsData   = [];
+let _starsTlData = [];
 let _selected = new Set();      // agent keys currently visible
 let _topLangs = [];             // top 10 languages (computed once)
 let _selectedLangs = new Set(); // languages currently visible
@@ -310,6 +311,49 @@ function renderStars() {
       },
     },
   });
+
+  // Native listeners — Chart.js onHover/onClick don't fire reliably outside the plot area
+  const canvas = document.getElementById('chart-stars');
+  const tooltip = document.getElementById('chart-tooltip');
+  canvas.addEventListener('mousemove', e => {
+    const chart = _charts['chart-stars'];
+    if (!chart) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const xScale = chart.scales.x;
+    const inLabelBand = y > chart.chartArea.bottom && y < xScale.bottom;
+    const nearTick = inLabelBand && xScale.ticks.some((_, i) => Math.abs(x - xScale.getPixelForTick(i)) < 60);
+    canvas.style.cursor = nearTick ? 'pointer' : 'default';
+    if (nearTick) {
+      tooltip.style.display = 'block';
+      tooltip.style.left = (e.clientX + 12) + 'px';
+      tooltip.style.top  = (e.clientY - 28) + 'px';
+    } else {
+      tooltip.style.display = 'none';
+    }
+  });
+  canvas.addEventListener('mouseleave', () => {
+    canvas.style.cursor = 'default';
+    tooltip.style.display = 'none';
+  });
+  canvas.addEventListener('click', e => {
+    const chart = _charts['chart-stars'];
+    if (!chart) return;
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    if (y <= chart.chartArea.bottom || y >= chart.scales.x.bottom) return;
+    const xScale = chart.scales.x;
+    let closest = -1, minDist = Infinity;
+    xScale.ticks.forEach((_, i) => {
+      const dist = Math.abs(x - xScale.getPixelForTick(i));
+      if (dist < minDist) { minDist = dist; closest = i; }
+    });
+    if (closest >= 0 && minDist < 60) {
+      window.open(`evolution.html?bucket=${encodeURIComponent(BUCKETS[closest])}`, '_blank');
+    }
+  });
 }
 
 // ── Render all charts ─────────────────────────────────────────────────────────
@@ -326,8 +370,8 @@ function renderCharts() {
 
 async function init() {
   // Load all data in parallel
-  [_agents, _timeline, _langData, _starsData] = await Promise.all([
-    load('agents.json'), load('timeline.json'), load('languages.json'), load('stars.json'),
+  [_agents, _timeline, _langData, _starsData, _starsTlData] = await Promise.all([
+    load('agents.json'), load('timeline.json'), load('languages.json'), load('stars.json'), load('stars_timeline.json'),
   ]);
 
   // Default: all agents and languages selected

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evolution — Coding Agent Radar</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #080c14;
+      --surface:  #0f1724;
+      --border:   #1e2d42;
+      --text:     #e2e8f0;
+      --muted:    #4d6585;
+      --accent:   #4f8ef7;
+      --radius:   10px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 24px 64px;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+      margin-bottom: 28px;
+      transition: color 0.15s;
+    }
+    .back:hover { color: var(--text); }
+
+    h1 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 32px;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    canvas { width: 100% !important; }
+
+    #error {
+      display: none;
+      background: #160a0a;
+      border: 1px solid #3d1515;
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      color: #f87171;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <a class="back" href="index.html">← Back to Radar</a>
+
+  <h1 id="title">Repository Popularity Evolution</h1>
+  <p class="subtitle" id="subtitle">Cumulative repo count over time</p>
+
+  <div id="error"></div>
+
+  <div class="panel">
+    <canvas id="chart-evolution" height="320"></canvas>
+  </div>
+
+</div>
+<script>
+const BASE = './public/';
+
+Chart.defaults.color = '#8b949e';
+Chart.defaults.borderColor = '#30363d';
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+Chart.defaults.font.size = 12;
+
+function showError(msg) {
+  const el = document.getElementById('error');
+  el.style.display = 'block';
+  el.textContent = msg;
+}
+
+async function load(file) {
+  const res = await fetch(BASE + file);
+  if (!res.ok) throw new Error(`Failed to load ${file}: ${res.status}`);
+  return res.json();
+}
+
+async function init() {
+  const params = new URLSearchParams(location.search);
+  const bucket = params.get('bucket');
+  if (!bucket) { showError('No bucket specified.'); return; }
+
+  document.getElementById('title').textContent = `Repository Popularity Evolution — ${bucket} stars`;
+  document.getElementById('subtitle').textContent = 'Cumulative repo count per agent over time';
+  document.title = `Evolution: ${bucket} stars — Coding Agent Radar`;
+
+  const [agents, starsTl] = await Promise.all([
+    load('agents.json'),
+    load('stars_timeline.json'),
+  ]);
+
+  const agentMap = Object.fromEntries(agents.map(a => [a.agent, a]));
+
+  const rows = starsTl.filter(r => r.bucket === bucket);
+  const dates = [...new Set(rows.map(r => r.week))].sort();
+  const agentKeys = [...new Set(rows.map(r => r.agent))];
+
+  const datasets = agentKeys.map(key => {
+    const meta = agentMap[key] || { label: key, color: '#cccccc' };
+    return {
+      label:           meta.label,
+      borderColor:     meta.color,
+      backgroundColor: meta.color + '22',
+      fill: false,
+      tension: 0.3,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      data: dates.map(d => {
+        const row = rows.find(r => r.week === d && r.agent === key);
+        return row ? row.count : null;
+      }),
+    };
+  }).filter(ds => ds.data.some(v => v !== null));
+
+  new Chart(document.getElementById('chart-evolution'), {
+    type: 'line',
+    data: { labels: dates, datasets },
+    options: {
+      plugins: {
+        legend: { position: 'bottom', labels: { boxWidth: 12, padding: 12 } },
+        tooltip: { callbacks: { label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y.toLocaleString()}` } },
+      },
+      scales: {
+        x: { grid: { color: '#21262d' } },
+        y: {
+          grid: { color: '#21262d' },
+          ticks: { callback: v => v >= 1000 ? (v / 1000).toFixed(1) + 'k' : v },
+        },
+      },
+    },
+  });
+}
+
+init().catch(err => showError(`Could not load data: ${err.message}`));
+</script>
+</body>
+</html>

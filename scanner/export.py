@@ -14,6 +14,7 @@ def export_all() -> None:
     _export_timeline()
     _export_languages()
     _export_stars()
+    _export_stars_timeline()
     _export_scan_meta()
     print(f"Exported JSON files → {PUBLIC_DIR}")
 
@@ -93,6 +94,40 @@ def _export_stars() -> None:
 
     data = [{"agent": r["agent"], "bucket": r["bucket"], "count": r["count"]} for r in rows]
     _write("stars.json", data)
+
+
+def _export_stars_timeline() -> None:
+    """Append this week's star-bucket snapshot to stars_timeline.json."""
+    week = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    path = PUBLIC_DIR / "stars_timeline.json"
+
+    existing: list[dict] = json.loads(path.read_text()) if path.exists() else []
+
+    # Remove any prior entries for this week (idempotent re-runs)
+    existing = [r for r in existing if r.get("week") != week]
+
+    with get_conn() as conn:
+        rows = conn.execute("""
+            SELECT
+                agent,
+                CASE
+                    WHEN stars < 100   THEN '< 100'
+                    WHEN stars < 1000  THEN '100–1k'
+                    WHEN stars < 10000 THEN '1k–10k'
+                    ELSE                    '10k+'
+                END AS bucket,
+                COUNT(*) AS count
+            FROM detections
+            WHERE stars IS NOT NULL
+            GROUP BY agent, bucket
+        """).fetchall()
+
+    for r in rows:
+        existing.append({"week": week, "agent": r["agent"], "bucket": r["bucket"], "count": r["count"]})
+
+    existing.sort(key=lambda r: (r["week"], r["agent"], r["bucket"]))
+    path.write_text(json.dumps(existing, indent=2))
+    print(f"  → stars_timeline.json (week {week}, {len(rows)} rows)")
 
 
 def _export_scan_meta() -> None:
