@@ -2,7 +2,7 @@
   {
     "agent": "aider",
     "bucket": "100\u20131k",
-    "count": 21
+    "count": 23
   },
   {
     "agent": "aider",
@@ -17,57 +17,57 @@
   {
     "agent": "aider",
     "bucket": "< 100",
-    "count": 776
+    "count": 805
   },
   {
     "agent": "claude_code",
     "bucket": "100\u20131k",
-    "count": 113
+    "count": 120
   },
   {
     "agent": "claude_code",
     "bucket": "10k+",
-    "count": 29
+    "count": 32
   },
   {
     "agent": "claude_code",
     "bucket": "1k\u201310k",
-    "count": 53
+    "count": 58
   },
   {
     "agent": "claude_code",
     "bucket": "< 100",
-    "count": 4636
+    "count": 4968
   },
   {
     "agent": "codex",
     "bucket": "100\u20131k",
-    "count": 108
+    "count": 119
   },
   {
     "agent": "codex",
     "bucket": "10k+",
-    "count": 21
+    "count": 24
   },
   {
     "agent": "codex",
     "bucket": "1k\u201310k",
-    "count": 31
+    "count": 34
   },
   {
     "agent": "codex",
     "bucket": "< 100",
-    "count": 1918
+    "count": 2067
   },
   {
     "agent": "continue",
     "bucket": "< 100",
-    "count": 76
+    "count": 79
   },
   {
     "agent": "copilot",
     "bucket": "100\u20131k",
-    "count": 43
+    "count": 45
   },
   {
     "agent": "copilot",
@@ -82,12 +82,12 @@
   {
     "agent": "copilot",
     "bucket": "< 100",
-    "count": 1475
+    "count": 1512
   },
   {
     "agent": "cursor",
     "bucket": "100\u20131k",
-    "count": 33
+    "count": 34
   },
   {
     "agent": "cursor",
@@ -102,7 +102,7 @@
   {
     "agent": "cursor",
     "bucket": "< 100",
-    "count": 1384
+    "count": 1435
   },
   {
     "agent": "devin",
@@ -112,7 +112,7 @@
   {
     "agent": "devin",
     "bucket": "10k+",
-    "count": 4
+    "count": 5
   },
   {
     "agent": "devin",
@@ -122,12 +122,12 @@
   {
     "agent": "devin",
     "bucket": "< 100",
-    "count": 325
+    "count": 338
   },
   {
     "agent": "windsurf",
     "bucket": "100\u20131k",
-    "count": 43
+    "count": 46
   },
   {
     "agent": "windsurf",
@@ -142,6 +142,6 @@
   {
     "agent": "windsurf",
     "bucket": "< 100",
-    "count": 1242
+    "count": 1279
   }
 ]

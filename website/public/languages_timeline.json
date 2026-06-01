@@ -16642,5 +16642,2387 @@
     "language": "Zig",
     "agent": "copilot",
     "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "ABAP",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "AGS Script",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "AL",
+    "agent": "claude_code",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "API Blueprint",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Assembly",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Assembly",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "claude_code",
+    "count": 29
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "codex",
+    "count": 14
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "copilot",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "cursor",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "devin",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Astro",
+    "agent": "windsurf",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "AutoHotkey",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "AutoHotkey",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Batchfile",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Batchfile",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Bicep",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Bikeshed",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Blade",
+    "agent": "claude_code",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Blade",
+    "agent": "codex",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Blade",
+    "agent": "copilot",
+    "count": 8
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Blade",
+    "agent": "cursor",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Blade",
+    "agent": "windsurf",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "BrighterScript",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Bru",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C",
+    "agent": "aider",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C",
+    "agent": "claude_code",
+    "count": 41
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C",
+    "agent": "codex",
+    "count": 21
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C",
+    "agent": "copilot",
+    "count": 13
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C",
+    "agent": "cursor",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C",
+    "agent": "windsurf",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "aider",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "claude_code",
+    "count": 88
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "codex",
+    "count": 56
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "copilot",
+    "count": 108
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "cursor",
+    "count": 23
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "devin",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C#",
+    "agent": "windsurf",
+    "count": 25
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "aider",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "claude_code",
+    "count": 74
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "codex",
+    "count": 31
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "continue",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "copilot",
+    "count": 27
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "cursor",
+    "count": 18
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "C++",
+    "agent": "windsurf",
+    "count": 17
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CAP CDS",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CAP CDS",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CMake",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CMake",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CMake",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "aider",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "claude_code",
+    "count": 32
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "codex",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "copilot",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "cursor",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "devin",
+    "count": 8
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CSS",
+    "agent": "windsurf",
+    "count": 16
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Cairo",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Cairo",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Clojure",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Clojure",
+    "agent": "claude_code",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Clojure",
+    "agent": "codex",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Clojure",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "CoffeeScript",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Common Lisp",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Crystal",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "claude_code",
+    "count": 37
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "codex",
+    "count": 20
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "continue",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "copilot",
+    "count": 26
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "cursor",
+    "count": 24
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "devin",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dart",
+    "agent": "windsurf",
+    "count": 19
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "aider",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "claude_code",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "codex",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "continue",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "copilot",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Dockerfile",
+    "agent": "windsurf",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "E",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "EJS",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "EJS",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elixir",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elixir",
+    "agent": "claude_code",
+    "count": 14
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elixir",
+    "agent": "codex",
+    "count": 14
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elixir",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elixir",
+    "agent": "cursor",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elixir",
+    "agent": "windsurf",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elm",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Elm",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Emacs Lisp",
+    "agent": "aider",
+    "count": 11
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Emacs Lisp",
+    "agent": "claude_code",
+    "count": 8
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Emacs Lisp",
+    "agent": "codex",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Erlang",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Erlang",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "F#",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "F#",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "F#",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Fluent",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Fortran",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDB",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDScript",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDScript",
+    "agent": "claude_code",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDScript",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDScript",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDScript",
+    "agent": "cursor",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "GDScript",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Game Maker Language",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Gherkin",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Gleam",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "aider",
+    "count": 22
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "claude_code",
+    "count": 176
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "codex",
+    "count": 114
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "copilot",
+    "count": 49
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "cursor",
+    "count": 32
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "devin",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go",
+    "agent": "windsurf",
+    "count": 45
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go Template",
+    "agent": "claude_code",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go Template",
+    "agent": "codex",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Go Template",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Groovy",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Groovy",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HCL",
+    "agent": "claude_code",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HCL",
+    "agent": "codex",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HCL",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HCL",
+    "agent": "cursor",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HCL",
+    "agent": "windsurf",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "aider",
+    "count": 21
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "claude_code",
+    "count": 272
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "codex",
+    "count": 84
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "continue",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "copilot",
+    "count": 75
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "cursor",
+    "count": 63
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "devin",
+    "count": 37
+  },
+  {
+    "week": "2026-06-01",
+    "language": "HTML",
+    "agent": "windsurf",
+    "count": 47
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Haskell",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Haskell",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Idris",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Idris",
+    "agent": "windsurf",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ink",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Inno Setup",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "aider",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "claude_code",
+    "count": 82
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "codex",
+    "count": 47
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "continue",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "copilot",
+    "count": 28
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "cursor",
+    "count": 17
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "devin",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Java",
+    "agent": "windsurf",
+    "count": 21
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "aider",
+    "count": 45
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "claude_code",
+    "count": 411
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "codex",
+    "count": 162
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "continue",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "copilot",
+    "count": 149
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "cursor",
+    "count": 153
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "devin",
+    "count": 25
+  },
+  {
+    "week": "2026-06-01",
+    "language": "JavaScript",
+    "agent": "windsurf",
+    "count": 127
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jinja",
+    "agent": "aider",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jinja",
+    "agent": "claude_code",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jinja",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jinja",
+    "agent": "cursor",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Julia",
+    "agent": "claude_code",
+    "count": 8
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Julia",
+    "agent": "windsurf",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "claude_code",
+    "count": 60
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "codex",
+    "count": 24
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "continue",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "copilot",
+    "count": 16
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "cursor",
+    "count": 26
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "devin",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Jupyter Notebook",
+    "agent": "windsurf",
+    "count": 21
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Just",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Just",
+    "agent": "copilot",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Just",
+    "agent": "windsurf",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Kotlin",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Kotlin",
+    "agent": "claude_code",
+    "count": 54
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Kotlin",
+    "agent": "codex",
+    "count": 17
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Kotlin",
+    "agent": "copilot",
+    "count": 18
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Kotlin",
+    "agent": "cursor",
+    "count": 14
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Kotlin",
+    "agent": "windsurf",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lean",
+    "agent": "claude_code",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Linear Programming",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Linker Script",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Liquid",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Liquid",
+    "agent": "copilot",
+    "count": 18
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Liquid",
+    "agent": "cursor",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "LiveScript",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lua",
+    "agent": "aider",
+    "count": 57
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lua",
+    "agent": "claude_code",
+    "count": 38
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lua",
+    "agent": "codex",
+    "count": 15
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lua",
+    "agent": "copilot",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lua",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Lua",
+    "agent": "windsurf",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Luau",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MATLAB",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "claude_code",
+    "count": 31
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "codex",
+    "count": 24
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "cursor",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "devin",
+    "count": 14
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MDX",
+    "agent": "windsurf",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MLIR",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "aider",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "claude_code",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "copilot",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "devin",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Makefile",
+    "agent": "windsurf",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Markdown",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Markdown",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Markdown",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Mathematical Programming System",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Mermaid",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "MoonBit",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "NetLogo",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "aider",
+    "count": 11
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "claude_code",
+    "count": 16
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "codex",
+    "count": 17
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nix",
+    "agent": "windsurf",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nunjucks",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nunjucks",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nunjucks",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nunjucks",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nunjucks",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nushell",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nushell",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nushell",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Nushell",
+    "agent": "continue",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "OCaml",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "OCaml",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "OCaml",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Objective-C",
+    "agent": "claude_code",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Objective-C",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Objective-C++",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Objective-C++",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Objective-C++",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Objective-J",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Odin",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "OpenSCAD",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "aider",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "claude_code",
+    "count": 55
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "codex",
+    "count": 34
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "copilot",
+    "count": 45
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "cursor",
+    "count": 24
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PHP",
+    "agent": "windsurf",
+    "count": 29
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PLpgSQL",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PLpgSQL",
+    "agent": "claude_code",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PLpgSQL",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PLpgSQL",
+    "agent": "copilot",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Perl",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Perl",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "aider",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "claude_code",
+    "count": 18
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "codex",
+    "count": 11
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "continue",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "copilot",
+    "count": 15
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "cursor",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "PowerShell",
+    "agent": "windsurf",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Prolog",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Pug",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "aider",
+    "count": 212
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "claude_code",
+    "count": 1108
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "codex",
+    "count": 495
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "continue",
+    "count": 23
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "copilot",
+    "count": 291
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "cursor",
+    "count": 267
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "devin",
+    "count": 70
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Python",
+    "agent": "windsurf",
+    "count": 239
+  },
+  {
+    "week": "2026-06-01",
+    "language": "QML",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "QuakeC",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "R",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "R",
+    "agent": "claude_code",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "R",
+    "agent": "codex",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "R",
+    "agent": "copilot",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Racket",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "ReScript",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "ReScript",
+    "agent": "windsurf",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Reason",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rich Text Format",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "RobotFramework",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Roff",
+    "agent": "continue",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Roff",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "claude_code",
+    "count": 22
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "codex",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "copilot",
+    "count": 8
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "cursor",
+    "count": 6
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "devin",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Ruby",
+    "agent": "windsurf",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "aider",
+    "count": 26
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "claude_code",
+    "count": 208
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "codex",
+    "count": 108
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "continue",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "copilot",
+    "count": 36
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "cursor",
+    "count": 29
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "devin",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Rust",
+    "agent": "windsurf",
+    "count": 31
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SCSS",
+    "agent": "claude_code",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SCSS",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SCSS",
+    "agent": "cursor",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SCSS",
+    "agent": "devin",
+    "count": 7
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scala",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scala",
+    "agent": "claude_code",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scala",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scala",
+    "agent": "copilot",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scala",
+    "agent": "windsurf",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scheme",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Scheme",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "ShaderLab",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "ShaderLab",
+    "agent": "claude_code",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "aider",
+    "count": 151
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "claude_code",
+    "count": 254
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "codex",
+    "count": 94
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "continue",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "copilot",
+    "count": 40
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "cursor",
+    "count": 37
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "devin",
+    "count": 8
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Shell",
+    "agent": "windsurf",
+    "count": 55
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Smarty",
+    "agent": "aider",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Smarty",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Smarty",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Smarty",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Solidity",
+    "agent": "claude_code",
+    "count": 11
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Solidity",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Solidity",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Solidity",
+    "agent": "cursor",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Solidity",
+    "agent": "windsurf",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Stata",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SuperCollider",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "aider",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "claude_code",
+    "count": 17
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "codex",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "cursor",
+    "count": 5
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Svelte",
+    "agent": "windsurf",
+    "count": 13
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Swift",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Swift",
+    "agent": "claude_code",
+    "count": 72
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Swift",
+    "agent": "codex",
+    "count": 33
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Swift",
+    "agent": "copilot",
+    "count": 10
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Swift",
+    "agent": "cursor",
+    "count": 16
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Swift",
+    "agent": "windsurf",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SystemVerilog",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "SystemVerilog",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TSQL",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TSQL",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Tcl",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TeX",
+    "agent": "claude_code",
+    "count": 9
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TeX",
+    "agent": "codex",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TeX",
+    "agent": "cursor",
+    "count": 3
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TeX",
+    "agent": "devin",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Teal",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Twig",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "aider",
+    "count": 137
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "claude_code",
+    "count": 1556
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "codex",
+    "count": 624
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "continue",
+    "count": 17
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "copilot",
+    "count": 434
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "cursor",
+    "count": 593
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "devin",
+    "count": 94
+  },
+  {
+    "week": "2026-06-01",
+    "language": "TypeScript",
+    "agent": "windsurf",
+    "count": 480
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Typst",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "VHDL",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "VHDL",
+    "agent": "cursor",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Verilog",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vim Script",
+    "agent": "aider",
+    "count": 11
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vim Script",
+    "agent": "claude_code",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vim Script",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vim Snippet",
+    "agent": "aider",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vim Snippet",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vim Snippet",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "aider",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "claude_code",
+    "count": 53
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "codex",
+    "count": 24
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "copilot",
+    "count": 20
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "cursor",
+    "count": 25
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "devin",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Vue",
+    "agent": "windsurf",
+    "count": 21
+  },
+  {
+    "week": "2026-06-01",
+    "language": "WDL",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "WGSL",
+    "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "XSLT",
+    "agent": "copilot",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "XSLT",
+    "agent": "devin",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "YAML",
+    "agent": "codex",
+    "count": 1
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Zig",
+    "agent": "claude_code",
+    "count": 4
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Zig",
+    "agent": "codex",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "Zig",
+    "agent": "copilot",
+    "count": 2
+  },
+  {
+    "week": "2026-06-01",
+    "language": "templ",
+    "agent": "claude_code",
+    "count": 1
   }
 ]
