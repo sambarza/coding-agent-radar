@@ -348,5 +348,45 @@
     "month": "2026-06-01",
     "agent": "windsurf",
     "count": 40
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "aider",
+    "count": 58
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "claude_code",
+    "count": 924
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "codex",
+    "count": 943
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "continue",
+    "count": 2
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "copilot",
+    "count": 859
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "cursor",
+    "count": 816
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "devin",
+    "count": 21
+  },
+  {
+    "month": "2026-06-08",
+    "agent": "windsurf",
+    "count": 579
   }
 ]
