@@ -6,8 +6,8 @@
     "signals": [
       "CLAUDE.md"
     ],
-    "count": 6102,
-    "pct": 35.3
+    "count": 6802,
+    "pct": 36.4
   },
   {
     "agent": "codex",
@@ -16,8 +16,8 @@
     "signals": [
       "AGENTS.md"
     ],
-    "count": 3187,
-    "pct": 18.4
+    "count": 3554,
+    "pct": 19.0
   },
   {
     "agent": "copilot",
@@ -26,8 +26,8 @@
     "signals": [
       "copilot-instructions.md"
     ],
-    "count": 2434,
-    "pct": 14.1
+    "count": 2523,
+    "pct": 13.5
   },
   {
     "agent": "cursor",
@@ -36,8 +36,8 @@
     "signals": [
       ".cursorrules"
     ],
-    "count": 2302,
-    "pct": 13.3
+    "count": 2451,
+    "pct": 13.1
   },
   {
     "agent": "windsurf",
@@ -46,8 +46,8 @@
     "signals": [
       ".windsurfrules"
     ],
-    "count": 1914,
-    "pct": 11.1
+    "count": 1956,
+    "pct": 10.5
   },
   {
     "agent": "aider",
@@ -56,8 +56,8 @@
     "signals": [
       ".aider.conf.yml"
     ],
-    "count": 890,
-    "pct": 5.1
+    "count": 924,
+    "pct": 4.9
   },
   {
     "agent": "devin",
@@ -66,7 +66,7 @@
     "signals": [
       "devin.md"
     ],
-    "count": 381,
+    "count": 408,
     "pct": 2.2
   },
   {
@@ -76,7 +76,7 @@
     "signals": [
       ".continuerc.json"
     ],
-    "count": 81,
-    "pct": 0.5
+    "count": 82,
+    "pct": 0.4
   }
 ]
