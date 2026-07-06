@@ -12,7 +12,7 @@
   {
     "language": "TypeScript",
     "agent": "codex",
-    "count": 1135
+    "count": 1175
   },
   {
     "language": "TypeScript",
@@ -22,7 +22,7 @@
   {
     "language": "Python",
     "agent": "codex",
-    "count": 877
+    "count": 898
   },
   {
     "language": "TypeScript",
@@ -32,7 +32,7 @@
   {
     "language": "TypeScript",
     "agent": "copilot",
-    "count": 657
+    "count": 660
   },
   {
     "language": "JavaScript",
@@ -42,7 +42,7 @@
   {
     "language": "Python",
     "agent": "copilot",
-    "count": 495
+    "count": 496
   },
   {
     "language": "Python",
@@ -70,19 +70,19 @@
     "count": 308
   },
   {
+    "language": "JavaScript",
+    "agent": "codex",
+    "count": 279
+  },
+  {
     "language": "Go",
     "agent": "claude_code",
     "count": 273
   },
   {
     "language": "JavaScript",
-    "agent": "codex",
-    "count": 263
-  },
-  {
-    "language": "JavaScript",
     "agent": "copilot",
-    "count": 256
+    "count": 258
   },
   {
     "language": "Python",
@@ -95,14 +95,19 @@
     "count": 241
   },
   {
+    "language": "Rust",
+    "agent": "codex",
+    "count": 204
+  },
+  {
     "language": "JavaScript",
     "agent": "windsurf",
     "count": 199
   },
   {
-    "language": "Rust",
+    "language": "Go",
     "agent": "codex",
-    "count": 199
+    "count": 192
   },
   {
     "language": "TypeScript",
@@ -110,14 +115,9 @@
     "count": 186
   },
   {
-    "language": "Go",
-    "agent": "codex",
-    "count": 182
-  },
-  {
     "language": "C#",
     "agent": "copilot",
-    "count": 180
+    "count": 181
   },
   {
     "language": "Shell",
@@ -127,12 +127,12 @@
   {
     "language": "Shell",
     "agent": "codex",
-    "count": 161
+    "count": 164
   },
   {
     "language": "HTML",
     "agent": "codex",
-    "count": 156
+    "count": 162
   },
   {
     "language": "C#",
@@ -167,7 +167,7 @@
   {
     "language": "C#",
     "agent": "codex",
-    "count": 103
+    "count": 108
   },
   {
     "language": "HTML",
@@ -177,7 +177,12 @@
   {
     "language": "Python",
     "agent": "devin",
-    "count": 95
+    "count": 96
+  },
+  {
+    "language": "Shell",
+    "agent": "copilot",
+    "count": 94
   },
   {
     "language": "PHP",
@@ -185,19 +190,14 @@
     "count": 93
   },
   {
-    "language": "Shell",
-    "agent": "copilot",
-    "count": 93
+    "language": "Java",
+    "agent": "codex",
+    "count": 89
   },
   {
     "language": "Jupyter Notebook",
     "agent": "claude_code",
     "count": 88
-  },
-  {
-    "language": "Java",
-    "agent": "codex",
-    "count": 87
   },
   {
     "language": "Go",
@@ -257,7 +257,12 @@
   {
     "language": "PHP",
     "agent": "codex",
-    "count": 58
+    "count": 59
+  },
+  {
+    "language": "Swift",
+    "agent": "codex",
+    "count": 59
   },
   {
     "language": "Lua",
@@ -270,7 +275,7 @@
     "count": 57
   },
   {
-    "language": "Swift",
+    "language": "C++",
     "agent": "codex",
     "count": 56
   },
@@ -283,11 +288,6 @@
     "language": "Dart",
     "agent": "claude_code",
     "count": 55
-  },
-  {
-    "language": "C++",
-    "agent": "codex",
-    "count": 53
   },
   {
     "language": "Go",
@@ -335,12 +335,17 @@
     "count": 45
   },
   {
+    "language": "Kotlin",
+    "agent": "codex",
+    "count": 42
+  },
+  {
     "language": "HTML",
     "agent": "devin",
     "count": 41
   },
   {
-    "language": "Kotlin",
+    "language": "Jupyter Notebook",
     "agent": "codex",
     "count": 41
   },
@@ -348,11 +353,6 @@
     "language": "Vue",
     "agent": "codex",
     "count": 41
-  },
-  {
-    "language": "Jupyter Notebook",
-    "agent": "codex",
-    "count": 40
   },
   {
     "language": "Dart",
@@ -430,6 +430,11 @@
     "count": 32
   },
   {
+    "language": "Rust",
+    "agent": "aider",
+    "count": 32
+  },
+  {
     "language": "Vue",
     "agent": "windsurf",
     "count": 32
@@ -442,11 +447,6 @@
   {
     "language": "PowerShell",
     "agent": "copilot",
-    "count": 31
-  },
-  {
-    "language": "Rust",
-    "agent": "aider",
     "count": 31
   },
   {
@@ -537,7 +537,7 @@
   {
     "language": "CSS",
     "agent": "codex",
-    "count": 20
+    "count": 21
   },
   {
     "language": "Kotlin",
@@ -545,12 +545,17 @@
     "count": 20
   },
   {
+    "language": "Elixir",
+    "agent": "codex",
+    "count": 19
+  },
+  {
     "language": "Just",
     "agent": "windsurf",
     "count": 19
   },
   {
-    "language": "Elixir",
+    "language": "Ruby",
     "agent": "codex",
     "count": 18
   },
@@ -562,11 +567,6 @@
   {
     "language": "Elixir",
     "agent": "claude_code",
-    "count": 17
-  },
-  {
-    "language": "Ruby",
-    "agent": "codex",
     "count": 17
   },
   {
@@ -700,6 +700,11 @@
     "count": 12
   },
   {
+    "language": "Zig",
+    "agent": "codex",
+    "count": 12
+  },
+  {
     "language": "Astro",
     "agent": "windsurf",
     "count": 11
@@ -715,6 +720,11 @@
     "count": 11
   },
   {
+    "language": "R",
+    "agent": "codex",
+    "count": 11
+  },
+  {
     "language": "Shell",
     "agent": "continue",
     "count": 11
@@ -727,11 +737,6 @@
   {
     "language": "Zig",
     "agent": "claude_code",
-    "count": 11
-  },
-  {
-    "language": "Zig",
-    "agent": "codex",
     "count": 11
   },
   {
@@ -792,11 +797,6 @@
   {
     "language": "PowerShell",
     "agent": "aider",
-    "count": 9
-  },
-  {
-    "language": "R",
-    "agent": "codex",
     "count": 9
   },
   {
@@ -930,6 +930,11 @@
     "count": 6
   },
   {
+    "language": "TeX",
+    "agent": "codex",
+    "count": 6
+  },
+  {
     "language": "Vim Script",
     "agent": "claude_code",
     "count": 6
@@ -951,6 +956,11 @@
   },
   {
     "language": "GDScript",
+    "agent": "codex",
+    "count": 5
+  },
+  {
+    "language": "Go Template",
     "agent": "codex",
     "count": 5
   },
@@ -982,11 +992,6 @@
   {
     "language": "Swift",
     "agent": "devin",
-    "count": 5
-  },
-  {
-    "language": "TeX",
-    "agent": "codex",
     "count": 5
   },
   {
@@ -1027,11 +1032,6 @@
   {
     "language": "Go",
     "agent": "devin",
-    "count": 4
-  },
-  {
-    "language": "Go Template",
-    "agent": "codex",
     "count": 4
   },
   {
@@ -1707,6 +1707,11 @@
   {
     "language": "Crystal",
     "agent": "claude_code",
+    "count": 1
+  },
+  {
+    "language": "Crystal",
+    "agent": "codex",
     "count": 1
   },
   {

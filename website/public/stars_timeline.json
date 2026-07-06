@@ -2218,5 +2218,179 @@
     "agent": "windsurf",
     "bucket": "< 100",
     "count": 1971
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "aider",
+    "bucket": "100\u20131k",
+    "count": 24
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "aider",
+    "bucket": "10k+",
+    "count": 2
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "aider",
+    "bucket": "1k\u201310k",
+    "count": 3
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "aider",
+    "bucket": "< 100",
+    "count": 963
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "claude_code",
+    "bucket": "100\u20131k",
+    "count": 217
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "claude_code",
+    "bucket": "10k+",
+    "count": 51
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "claude_code",
+    "bucket": "1k\u201310k",
+    "count": 96
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "claude_code",
+    "bucket": "< 100",
+    "count": 7490
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "codex",
+    "bucket": "100\u20131k",
+    "count": 200
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "codex",
+    "bucket": "10k+",
+    "count": 41
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "codex",
+    "bucket": "1k\u201310k",
+    "count": 66
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "codex",
+    "bucket": "< 100",
+    "count": 3829
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "continue",
+    "bucket": "< 100",
+    "count": 83
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "copilot",
+    "bucket": "100\u20131k",
+    "count": 91
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "copilot",
+    "bucket": "10k+",
+    "count": 19
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "copilot",
+    "bucket": "1k\u201310k",
+    "count": 72
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "copilot",
+    "bucket": "< 100",
+    "count": 2472
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "cursor",
+    "bucket": "100\u20131k",
+    "count": 68
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "cursor",
+    "bucket": "10k+",
+    "count": 7
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "cursor",
+    "bucket": "1k\u201310k",
+    "count": 19
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "cursor",
+    "bucket": "< 100",
+    "count": 2420
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "devin",
+    "bucket": "100\u20131k",
+    "count": 16
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "devin",
+    "bucket": "10k+",
+    "count": 8
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "devin",
+    "bucket": "1k\u201310k",
+    "count": 7
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "devin",
+    "bucket": "< 100",
+    "count": 414
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "windsurf",
+    "bucket": "100\u20131k",
+    "count": 60
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "windsurf",
+    "bucket": "10k+",
+    "count": 3
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "windsurf",
+    "bucket": "1k\u201310k",
+    "count": 14
+  },
+  {
+    "week": "2026-07-06",
+    "agent": "windsurf",
+    "bucket": "< 100",
+    "count": 1971
   }
 ]

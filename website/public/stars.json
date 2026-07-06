@@ -17,7 +17,7 @@
   {
     "agent": "aider",
     "bucket": "< 100",
-    "count": 962
+    "count": 963
   },
   {
     "agent": "claude_code",
@@ -42,22 +42,22 @@
   {
     "agent": "codex",
     "bucket": "100\u20131k",
-    "count": 195
+    "count": 200
   },
   {
     "agent": "codex",
     "bucket": "10k+",
-    "count": 39
+    "count": 41
   },
   {
     "agent": "codex",
     "bucket": "1k\u201310k",
-    "count": 64
+    "count": 66
   },
   {
     "agent": "codex",
     "bucket": "< 100",
-    "count": 3707
+    "count": 3829
   },
   {
     "agent": "continue",
@@ -82,7 +82,7 @@
   {
     "agent": "copilot",
     "bucket": "< 100",
-    "count": 2464
+    "count": 2472
   },
   {
     "agent": "cursor",
@@ -122,7 +122,7 @@
   {
     "agent": "devin",
     "bucket": "< 100",
-    "count": 413
+    "count": 414
   },
   {
     "agent": "windsurf",
