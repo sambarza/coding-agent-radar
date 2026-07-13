@@ -2,12 +2,12 @@
   {
     "agent": "aider",
     "bucket": "100\u20131k",
-    "count": 24
+    "count": 25
   },
   {
     "agent": "aider",
     "bucket": "10k+",
-    "count": 2
+    "count": 3
   },
   {
     "agent": "aider",
@@ -17,12 +17,12 @@
   {
     "agent": "aider",
     "bucket": "< 100",
-    "count": 963
+    "count": 967
   },
   {
     "agent": "claude_code",
     "bucket": "100\u20131k",
-    "count": 217
+    "count": 222
   },
   {
     "agent": "claude_code",
@@ -32,42 +32,42 @@
   {
     "agent": "claude_code",
     "bucket": "1k\u201310k",
-    "count": 96
+    "count": 99
   },
   {
     "agent": "claude_code",
     "bucket": "< 100",
-    "count": 7490
+    "count": 7633
   },
   {
     "agent": "codex",
     "bucket": "100\u20131k",
-    "count": 200
+    "count": 205
   },
   {
     "agent": "codex",
     "bucket": "10k+",
-    "count": 41
+    "count": 42
   },
   {
     "agent": "codex",
     "bucket": "1k\u201310k",
-    "count": 66
+    "count": 69
   },
   {
     "agent": "codex",
     "bucket": "< 100",
-    "count": 3829
+    "count": 3977
   },
   {
     "agent": "continue",
     "bucket": "< 100",
-    "count": 83
+    "count": 84
   },
   {
     "agent": "copilot",
     "bucket": "100\u20131k",
-    "count": 91
+    "count": 93
   },
   {
     "agent": "copilot",
@@ -77,17 +77,17 @@
   {
     "agent": "copilot",
     "bucket": "1k\u201310k",
-    "count": 72
+    "count": 73
   },
   {
     "agent": "copilot",
     "bucket": "< 100",
-    "count": 2472
+    "count": 2686
   },
   {
     "agent": "cursor",
     "bucket": "100\u20131k",
-    "count": 68
+    "count": 67
   },
   {
     "agent": "cursor",
@@ -97,12 +97,12 @@
   {
     "agent": "cursor",
     "bucket": "1k\u201310k",
-    "count": 19
+    "count": 20
   },
   {
     "agent": "cursor",
     "bucket": "< 100",
-    "count": 2420
+    "count": 2587
   },
   {
     "agent": "devin",
@@ -112,22 +112,22 @@
   {
     "agent": "devin",
     "bucket": "10k+",
-    "count": 8
+    "count": 9
   },
   {
     "agent": "devin",
     "bucket": "1k\u201310k",
-    "count": 7
+    "count": 8
   },
   {
     "agent": "devin",
     "bucket": "< 100",
-    "count": 414
+    "count": 464
   },
   {
     "agent": "windsurf",
     "bucket": "100\u20131k",
-    "count": 60
+    "count": 62
   },
   {
     "agent": "windsurf",
@@ -142,6 +142,6 @@
   {
     "agent": "windsurf",
     "bucket": "< 100",
-    "count": 1971
+    "count": 2018
   }
 ]
